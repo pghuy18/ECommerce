@@ -1,0 +1,450 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,400;0,700;1,200;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,400;0,700;1,200;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+
+/*About us*/
+.aboutus{
+    text-align: center;
+    font-size: 72px;
+    margin-top: 5px;
+    color: #Fb9c0d;
+    font-family: 'Raleway', sans-serif;
+    background: none;
+}
+.teamname{
+    color: #000;
+    font-family: 'Raleway', sans-serif;
+    font-size: 26px;
+    margin-top: 20px;
+    text-align: center;
+}
+.teamdescription{
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;  
+    text-align: center;
+    color:rgba(0, 0, 0, 0.514);
+    margin-top: 10px;
+}
+.meetteam{
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    margin-top: 20px;
+    font-size: 26px;
+}
+.column_picture_phanh, .column_picture_thinh, .column_picture_duy, .column_picture_huy {
+    width: 200px;
+    margin: 10px;
+    align-content: center;
+    align-items: center;
+}
+.column_picture_phanh, .column_picture_duy{
+    margin-left: 50px;
+}
+.row_picture_member12, .row_picture_member34{
+    display: flex;
+    flex-direction: row;
+    margin-top: 5px;
+    max-width: 960px;
+    width: 500px;
+    align-content: center;
+    margin: auto;
+}
+.row_picture_member34{
+    margin-top: -20px;
+}
+.membername{
+    color: #Fb9c0d;
+    font-family: 'Rubik', sans-serif;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+.memberrole{
+    font-family: 'Rubik', sans-serif;
+    font-size: 15px;
+    margin-top:-15px;
+    color:rgba(0, 0, 0, 0.514);
+    margin-left: 5px;
+}
+.namecard{
+    margin-top: 10px;
+    align-content: center;
+    margin: auto;
+    
+}
+.background{
+    align-items: center;
+    background-image: url('/image/bg-01.png');
+    background-repeat: no-repeat;
+    background-size: 100vw;
+    margin-left: 0px;
+}
+h2{
+    font-family: 'Righteous', cursive;
+    font-weight: 600;
+    font-size: 48px;
+}
+.contact{
+    display: flex;
+    flex-direction: row;
+    margin-left: -30px;
+}
+.subcont{
+    margin-top: -30px;
+    padding-left: 30px;
+}
+.subcont p{
+    margin-top: -25px;
+    font-size: 16px;
+}
+h5{
+    color:#Fb9c0d;
+    font-family: 'Righteous',cursive;
+    font-weight: 400;
+    font-size: 20px;
+}
+.layoutall, .works{
+    margin: 100px 250px;  
+    display: flex;
+    flex-direction: row;
+    
+}
+.introduce{
+    width: 500px;
+    padding-left: 150px
+}
+img{
+    max-width: 50em;
+}
+.role{
+    display: flex;
+    font-display: row;
+    max-width: 300px;
+    max-height: 50px;
+    margin-top: 30px;
+    margin-left: -10px;
+}
+.subrole{
+    text-align: center;
+    color: white;
+    background: black;
+    height: 50px;
+    line-height: 50px;
+    width: 200px;
+    margin: 0 10px;
+    border-radius: 5px;
+    font-weight: 500px;
+}
+.works{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: -200px;
+    margin-left: 360px;
+}
+.subwork{
+    display: flex;
+    height: 80px;
+    margin-top: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.card{
+    max-width: 400px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    margin:30px;
+    background: #fff;
+}
+.icon{
+    max-height: 80px;
+}
+.icon img{
+    height: 60px;
+}
+.text {
+    margin-left: 20px;
+    margin: 10px;
+}
+.text h4{
+    color:black;
+    font-family: 'Righteous',cursive;
+    font-weight: 400;
+    font-size: 20px;
+    margin-top: -3px;
+}
+.text p{
+    margin-top: -25px;
+    margin-bottom: -40px;
+}
+.information{
+    margin: 100px 100px;
+    display: flex;
+    width: 800px;
+    margin-bottom: 50px;
+}
+.info{
+    margin-left: 100px;
+}
+.infoimage{
+    height: 600px;
+}
+.infoimage img{
+    height: 600px;
+    margin-left: 100px;
+}
+.follow{
+    display: flex;
+    flex-direction: row;
+    max-width: 600px;
+    margin-left: -20px;
+    
+}
+.subfollow{
+    text-align: center;
+    color: white;
+    background: black;
+    height: 50px;
+    line-height: 50px;
+    width: 150px;
+    margin: 0 20px;
+    border-radius: 5px;
+    font-weight: 500px;
+}
+.subinfo h2{
+    font-size: 36px;
+}
+
+.skill{
+    margin: 150px 400px;
+    display: flex;
+    width: 800px;
+    margin-bottom: 50px;
+}
+.subskill{
+    width: 500px;
+
+}
+.subskill .exp{
+    margin: 20px 0;
+    margin-top: 30px;
+}
+.bar{
+    margin-top: -10px;
+    background: #353b48;
+    display: block;
+    height: 5px;
+    border: 0px solid rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); 
+    transition: all 0.3s cubic-bezier(.25, .8, .25, .1);
+}
+.bar span{
+    height: 5px;
+    float: left;
+    background: #Fb9c0d;
+}
+.ai{
+    width: 90%;
+}
+.ps{
+    width: 75%;
+}
+.figma{
+    width: 85%;
+}
+.html{
+    width: 80%;
+}
+.timeline{
+    width:90%;
+}
+.report{
+    width: 80%;
+}
+.figma_1{
+    width: 85%
+}
+.html_1{
+    width: 60%;
+}
+.analyze{
+    width: 85%;
+}
+.flutter{
+    width: 70%;
+}
+.java{
+    width: 85%;
+}
+.javascript{
+    width:80%;
+}
+.C{
+    width:85%;
+}
+.html_2{
+    width: 70%;
+}
+.css{
+    width: 75%;
+}
+.java{
+    width: 80%;
+}
+.react{
+    width:70%;
+}
+.skillcard{
+    display: flex;
+    margin: 50px 100px;
+}
+.col{
+    margin: 20px;
+    max-width: 400px;
+}
+.skcrd{
+    width: 200px;
+    align-items: center;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    padding-bottom: -10px;
+    margin-block-end: 40px;
+}
+.cardcontent{
+    margin-bottom: -20px;
+}
+.cardcontent h3{
+    font-family: 'Righteous',cursive;
+    font-size: 24px;
+    text-align: center;
+}
+.cardcontent img{
+    height: 100px;
+}
+.footer{
+    background-color: #000;
+}
+a:active{
+    color:#000;
+    text-decoration: underline;
+}
+a:hover{
+    color: #Fb9c0d;
+    text-decoration: underline;
+}
+a:visited, a:link{
+    color:#000;
+}
+.button_trans{
+    display: flex;
+    flex-direction: row;
+}
+/*Phanh button*/
+.button_next_phanh button{
+    margin-left: 1700px;
+    width: 160px;
+    height: 60px;
+    line-height: 20px;
+    border-color: #000;
+    color: #fff;
+    background-color: #000;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.button_next_phanh button:hover{
+    background-color: #fff;
+    color: #000;
+    border-color: #000;
+}
+.button_trans{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+/*Thinh button*/
+.button_next_thinh button{
+    margin-left: 1450px;
+    width: 200px;
+    height: 60px;
+    line-height: 20px;
+    border-color: #000;
+    color: #fff;
+    background-color: #000;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 10px;
+}
+.button_back_thinh button{
+    margin-left: 50px;
+    width: 160px;
+    height: 60px;
+    line-height: 20px;
+    border-color: #000;
+    color: #fff;
+    background-color: #000;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 10px;
+}
+.button_next_thinh button:hover, .button_back_thinh button:hover{
+    background-color: #fff;
+    color: #000;
+    border-color: #000;
+}
+/*Duy button*/
+.button_next_duy button{
+    margin-left: 1450px;
+    width: 200px;
+    height: 60px;
+    line-height: 20px;
+    border-color: #000;
+    color: #fff;
+    background-color: #000;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 10px;
+}
+.button_back_duy button{
+    margin-left: 50px;
+    width: 160px;
+    height: 60px;
+    line-height: 20px;
+    border-color: #000;
+    color: #fff;
+    background-color: #000;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 10px;
+}
+.button_next_duy button:hover, .button_back_duy button:hover{
+    background-color: #fff;
+    color: #000;
+    border-color: #000;
+}
+/*Huy button*/
+.button_back_huy button{
+    margin-left: 50px;
+    margin-bottom: 20px;
+    width: 200px;
+    height: 60px;
+    line-height: 20px;
+    border-color: #000;
+    color: #fff;
+    background-color: #000;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 10px;
+}
+.button_back_huy button:hover{
+    background-color: #fff;
+    color: #000;
+    border-color: #000;
+}

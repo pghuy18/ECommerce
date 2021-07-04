@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Create new flight</title>
+        <link href="/css/editflight.css" rel="stylesheet">
+        
+    </head>
+    <body>
+        <div class="create_border">
+            <div class="logo">
+              <img src="/image/logo.png" alt="">
+              <div class="brand">
+                  <h3 style="font-style: italic;
+                      font-weight:700;
+                      font-size: 36px;
+                      color:#fb9c0d;
+                      ">
+                      APCS
+                  </h3>
+                  <h3 style="margin-top: -37px; 
+                      font-weight: 200;
+                      font-size: 24px; 
+                      color:#fb9c0d;
+                      ">
+                      Airline
+                  </h3>
+            </div>
+            <div class="row">
+              <div class="col">
+                <div class="left-side">
+                  <!---Flight--->
+                  <div class="flight_code">
+                    <p title="flight">Flight:</p>
+                    <input type="text" placeholder="Enter flight code">
+                  </div>
+
+                  <!---Departure--->
+                  <div class="departure_time">
+                    <span>Departure:</span>
+                    <div class="departure-select">
+                      <select>
+                        <option value="0">Choose time</option>
+                        <option value="1">00:00 - 06:00</option>
+                        <option value="2">06:00 - 12:00</option>
+                        <option value="3">12:00 - 18:00</option>
+                        <option value="4">18:00 - 24:00</option>
+                      </select>
+                    </div>
+                  </div>
+                  
+                  <!---From--->
+                  <div class="from_city">
+                    <span>From:</span>
+                    <div class="from-select">
+                      <select>
+                        <option value="0">Choose city</option>
+                        <option value="1">Hải Phòng</option>
+                        <option value="2">Đà Nẵng</option>
+                        <option value="3">Đà Lạt</option>
+                        <option value="4">Hà Nội</option>
+                        <option value="5">Hồ Chí Minh</option>
+                        <option value="6">Nha Trang</option>
+                        <option value="7">Huế</option>
+                        <option value="8">Vinh</option>
+                        <option value="9">Phú Quốc</option>
+                        <option value="10">Buôn Ma Thuột</option>
+                        <option value="11">Cà Mau</option>
+                        <option value="12">Điện Biên</option>
+                        <option value="13">Pleiku</option>
+                        <option value="14">Cần Thơ</option>
+                        <option value="15">Chu Lai</option>
+                        <option value="16">Côn Đảo</option>
+                        <option value="17">Rạch Giá</option>
+                        <option value="18">Quy Nhơn</option>
+                        <option value="19">Tuy Hòa</option>
+                        <option value="20">Đồng Hới</option>
+                        <option value="21">Thanh Hóa</option>
+                      </select>
+                    </div>
+                  </div>
+                  <!---Airline--->
+                  <div class="airline_choose">
+                    <span>Airline:</span>
+                    <div class="airline-select">
+                      <select>
+                        <option value="0">Choose airline</option>
+                        <option value="1">Vietjet Airline</option>
+                        <option value="2">Vietnam Airline</option>
+                        <option value="3">Bamboo Airway</option>
+                      </select>
+                    </div>
+                  </div>    
+                </div>
+
+              </div>
+              <div class="col">
+                <div class="right-side">
+                  <!---Airplane code--->
+                  <div class="airplane_code">
+                    <p title="airplane">Airplane:</p>
+                    <input type="text" placeholder="Enter airplane code">
+                  </div>
+                  <!---Landing time--->
+                  <div class="landing_time">
+                    <span>Landing:</span>
+                    <div class="landing-select">
+                      <select>
+                        <option value="0">Choose time</option>
+                        <option value="1">00:00 - 06:00</option>
+                        <option value="2">06:00 - 12:00</option>
+                        <option value="3">12:00 - 18:00</option>
+                        <option value="4">18:00 - 24:00</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <!---To--->
+                  <div class="to_city">
+                    <span>To:</span>
+                    <div class="to-select">
+                      <select>
+                        <option value="0">Choose city</option>
+                        <option value="1">Hải Phòng</option>
+                        <option value="2">Đà Nẵng</option>
+                        <option value="3">Đà Lạt</option>
+                        <option value="4">Hà Nội</option>
+                        <option value="5">Hồ Chí Minh</option>
+                        <option value="6">Nha Trang</option>
+                        <option value="7">Huế</option>
+                        <option value="8">Vinh</option>
+                        <option value="9">Phú Quốc</option>
+                        <option value="10">Buôn Ma Thuột</option>
+                        <option value="11">Cà Mau</option>
+                        <option value="12">Điện Biên</option>
+                        <option value="13">Pleiku</option>
+                        <option value="14">Cần Thơ</option>
+                        <option value="15">Chu Lai</option>
+                        <option value="16">Côn Đảo</option>
+                        <option value="17">Rạch Giá</option>
+                        <option value="18">Quy Nhơn</option>
+                        <option value="19">Tuy Hòa</option>
+                        <option value="20">Đồng Hới</option>
+                        <option value="21">Thanh Hóa</option>
+                      </select>
+                    </div>
+                  </div>
+                  <!---Ticket--->
+                  <div class="ticket_price">
+                    <p title="ticket">Ticket:</p>
+                    <input type="text" placeholder="Enter price">
+                  </div>
+              </div>
+            </div>
+            <div class="create_button">
+              <a href=""><button type="button">CREATE</button></a>
+            </div> 
+        </div> 
+    </body>
+</html>
+
