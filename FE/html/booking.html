@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/booking.css">
+    <title>booking</title>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <img src="/image/logo.png" alt="">
+            <div class="brand">
+                <h3 style="font-style: italic;
+                        font-weight:700;
+                        font-size: 36px;
+                        margin-top: -1px;
+                        ">
+                        APCS
+                    </h3>
+                <h3 style="margin-top: -37px; 
+                        font-weight: 200;
+                        font-size: 24px; 
+                        ">
+                        Airline
+                        </h3>
+            </div>
+        </div>
+        <div class="items">
+            <a href="">HOME</a>
+            <a href="">REFUNDS</a>  
+            <a href="">ABOUT US</a>
+            <a href="">CONTACT </a>
+        </div>
+        <div class="login">
+            Login
+        </div>
+    </div>
+    <div class="bookingbg">
+        <h2></h2>
+    </div>
+    <div class="Searchfl">
+        <div class="sfct">
+            <div class="filter">
+                <div class="dropdown">
+                    <div class="dropdown-select ">
+                        <span class="select"> Selected item</span>
+                        <div class="dropdown-content">
+                            <p id="filterselect" >No select</p>
+                            <p id="filterselect">No select</p>
+                            <p id="filterselect">No select</p>
+                            <p id="filterselect">No select</p>
+                        </div>
+                    </div> 
+                </div>
+                <div class="dropdown">
+                    <div class="dropdown-select ">
+                        <span class="select"> Selected item</span>
+                        <div class="dropdown-content">
+                            <p id="filterselect">No select</p>
+                            <p id="filterselect">No select</p>
+                            <p id="filterselect">No select</p>
+                            <p id="filterselect">No select</p>
+                        </div>
+                    </div> 
+                </div>
+                <div class="passenger">
+                    <span>Passenger</span>
+                    <input style="border: 3px solid rgba(0, 0, 0, 0.25);
+                                  box-sizing: border-box;
+                                  border-radius: 7px;
+                                  height: 40px;
+                                  width: 140px;
+                                  margin-top: -10px;" 
+                                  type="text" 
+                                  id="passenger" 
+                                  name="fname"><br>
+                </div>
+            </div>
+            <div class="flightinfo">
+                <div class="subflinfo">
+                    <div class="subflinfoct">
+                        <h3>
+                            From
+                        </h3>
+                        <h2 id="FromCity">
+                            Ho Chi Minh City
+                        </h2>
+                        <h3 style="margin-top: -20px;" id="Airport">
+                            Tan Son Nhat International airport
+                        </h3>
+                    </div>
+                </div>
+                <img src="/image/arrow.svg" alt="">
+                <div class="subflinfo">
+                    <div class="subflinfoct">
+                        <h3>
+                            To
+                        </h3>
+                        <h2 id="ToCity">
+                            Ha Noi
+                        </h2>
+                        <h3 style="margin-top: -20px;" id="Airport">
+                            Noi Bai International airport
+                        </h3>
+                    </div>
+                </div>
+                <div class="date">
+                    <div class="depature">
+                        <div class="datect">
+                            <h3>
+                                Depature
+                            </h3>
+                            <h2>
+                                Fri, 18 June
+                            </h2>
+                            <div class="click">
+                                <img src="/image/calendar.svg" alt="">
+                                <a href="">Click to pick day</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="return">
+                        <div class="datect">
+                            <h3>
+                                Return
+                            </h3>
+                            <h2>
+                                Fri, 18 June
+                            </h2>
+                            <div class="click">
+                                <img src="/image/calendar.svg" alt="">
+                                <a href="">Click to pick day</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div href="#" class="btsearch">
+                        <div class="btsect">
+                            <img src="/image/searchbt.svg" alt="">
+                            <p>Search flights</p>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </div>
+
+    <div class="flights">
+        <div class="flightscontent">
+            <div class="flrow">
+                <div class="flcol-1">
+                    <img src="/image/vietjet.jpg" id="flightlogo" alt="">
+                    <div class="flbrandinfo">
+                        <h3 id="flightname">Vietjet air</h3>
+                        <h4 id="flightid"> VJ123 <span style="font-family: 'Rubik', serif;" id="planeid">|Airbus 333</span></h4>
+                    </div>
+                </div>
+                <div style="width:158px" class="flcol">
+                    <img style="height: 38px;" src="/image/planeicon.svg" alt="">
+                    <p class="departureDate " id="departureDate"> Fri, 18 June </p>
+                </div>
+                <div class="flcol">
+                    <p id="takeoffTime" class="takeoffTime">
+                        10:50
+                    </p>
+                    <p id="takeoffPlace" class="takeoffPlace">
+                        HCM City
+                    </p>
+                </div>
+                <div class="flcol">
+                    <img src="/image/arrow1.svg" alt="">
+                    <p class="flytime" id="flyTime"> 1 h 30 m</p>
+                    <p class="stop" id="stop">No stop</p>
+                </div>
+                <div class="flcol">
+                    <p id="landingTime" class="landingTime">
+                        10:50
+                    </p>
+                    <p id="landingPlace" class="landingPlace">
+                        HCM City
+                    </p>
+                </div>
+                <div class="flcol">
+                    <p id="ticketPrice" class="ticketPrice"> 900.000 đ</p>
+                </div>
+            </div>
+            <hr style="margin-right:60px">
+            <!--------->
+            <div class="flrow">
+                <div class="flcol-1">
+                    <img src="/image/vietjet.jpg" id="flightlogo" alt="">
+                    <div class="flbrandinfo">
+                        <h3 id="flightname">Vietjet air</h3>
+                        <h4 id="flightid"> VJ123 <span style="font-family: 'Rubik', serif;" id="planeid">|Airbus 333</span></h4>
+                    </div>
+                </div>
+                <div style="width:158px" class="flcol">
+                    <img style="height: 38px;" src="/image/planeicon.svg" alt="">
+                    <p class="departureDate " id="departureDate"> Fri, 18 June </p>
+                </div>
+                <div class="flcol">
+                    <p id="takeoffTime" class="takeoffTime">
+                        10:50
+                    </p>
+                    <p id="takeoffPlace" class="takeoffPlace">
+                        HCM City
+                    </p>
+                </div>
+                <div class="flcol">
+                    <img src="/image/arrow1.svg" alt="">
+                    <p class="flytime" id="flyTime"> 1 h 30 m</p>
+                    <p class="stop" id="stop">No stop</p>
+                </div>
+                <div class="flcol">
+                    <p id="landingTime" class="landingTime">
+                        10:50
+                    </p>
+                    <p id="landingPlace" class="landingPlace">
+                        HCM City
+                    </p>
+                </div>
+                <div class="flcol">
+                    <p id="ticketPrice" class="ticketPrice"> 900.000 đ</p>
+                </div>
+            </div>
+            <hr style="margin-right:60px">
+            <!--------->
+            <div class="flrow">
+                <div class="flcol-1">
+                    <img src="/image/vietjet.jpg" id="flightlogo" alt="">
+                    <div class="flbrandinfo">
+                        <h3 id="flightname">Vietjet air</h3>
+                        <h4 id="flightid"> VJ123 <span style="font-family: 'Rubik', serif;" id="planeid">|Airbus 333</span></h4>
+                    </div>
+                </div>
+                <div style="width:158px" class="flcol">
+                    <img style="height: 38px;" src="/image/planeicon.svg" alt="">
+                    <p class="departureDate " id="departureDate"> Fri, 18 June </p>
+                </div>
+                <div class="flcol">
+                    <p id="takeoffTime" class="takeoffTime">
+                        10:50
+                    </p>
+                    <p id="takeoffPlace" class="takeoffPlace">
+                        HCM City
+                    </p>
+                </div>
+                <div class="flcol">
+                    <img src="/image/arrow1.svg" alt="">
+                    <p class="flytime" id="flyTime"> 1 h 30 m</p>
+                    <p class="stop" id="stop">No stop</p>
+                </div>
+                <div class="flcol">
+                    <p id="landingTime" class="landingTime">
+                        10:50
+                    </p>
+                    <p id="landingPlace" class="landingPlace">
+                        HCM City
+                    </p>
+                </div>
+                <div class="flcol">
+                    <p id="ticketPrice" class="ticketPrice"> 900.000 đ</p>
+                </div>
+            </div>
+            <hr style="margin-right:60px"><!--------->
+            <div class="flrow">
+                <div class="flcol-1">
+                    <img src="/image/vietjet.jpg" id="flightlogo" alt="">
+                    <div class="flbrandinfo">
+                        <h3 id="flightname">Vietjet air</h3>
+                        <h4 id="flightid"> VJ123 <span style="font-family: 'Rubik', serif;" id="planeid">|Airbus 333</span></h4>
+                    </div>
+                </div>
+                <div style="width:158px" class="flcol">
+                    <img style="height: 38px;" src="/image/planeicon.svg" alt="">
+                    <p class="departureDate " id="departureDate"> Fri, 18 June </p>
+                </div>
+                <div class="flcol">
+                    <p id="takeoffTime" class="takeoffTime">
+                        10:50
+                    </p>
+                    <p id="takeoffPlace" class="takeoffPlace">
+                        HCM City
+                    </p>
+                </div>
+                <div class="flcol">
+                    <img src="/image/arrow1.svg" alt="">
+                    <p class="flytime" id="flyTime"> 1 h 30 m</p>
+                    <p class="stop" id="stop">No stop</p>
+                </div>
+                <div class="flcol">
+                    <p id="landingTime" class="landingTime">
+                        10:50
+                    </p>
+                    <p id="landingPlace" class="landingPlace">
+                        HCM City
+                    </p>
+                </div>
+                <div class="flcol">
+                    <p id="ticketPrice" class="ticketPrice"> 900.000 đ</p>
+                </div>
+            </div>
+            <hr style="margin-right:60px"><!--------->
+            <div class="flrow">
+                <div class="flcol-1">
+                    <img src="/image/vietjet.jpg" id="flightlogo" alt="">
+                    <div class="flbrandinfo">
+                        <h3 id="flightname">Vietjet air</h3>
+                        <h4 id="flightid"> VJ123 <span style="font-family: 'Rubik', serif;" id="planeid">|Airbus 333</span></h4>
+                    </div>
+                </div>
+                <div style="width:158px" class="flcol">
+                    <img style="height: 38px;" src="/image/planeicon.svg" alt="">
+                    <p class="departureDate " id="departureDate"> Fri, 18 June </p>
+                </div>
+                <div class="flcol">
+                    <p id="takeoffTime" class="takeoffTime">
+                        10:50
+                    </p>
+                    <p id="takeoffPlace" class="takeoffPlace">
+                        HCM City
+                    </p>
+                </div>
+                <div class="flcol">
+                    <img src="/image/arrow1.svg" alt="">
+                    <p class="flytime" id="flyTime"> 1 h 30 m</p>
+                    <p class="stop" id="stop">No stop</p>
+                </div>
+                <div class="flcol">
+                    <p id="landingTime" class="landingTime">
+                        10:50
+                    </p>
+                    <p id="landingPlace" class="landingPlace">
+                        HCM City
+                    </p>
+                </div>
+                <div class="flcol">
+                    <p id="ticketPrice" class="ticketPrice"> 900.000 đ</p>
+                </div>
+            </div>
+            <hr style="margin-right:60px"><!--------->
+            <div class="flrow">
+                <div class="flcol-1">
+                    <img src="/image/vietjet.jpg" id="flightlogo" alt="">
+                    <div class="flbrandinfo">
+                        <h3 id="flightname">Vietjet air</h3>
+                        <h4 id="flightid"> VJ123 <span style="font-family: 'Rubik', serif;" id="planeid">|Airbus 333</span></h4>
+                    </div>
+                </div>
+                <div style="width:158px" class="flcol">
+                    <img style="height: 38px;" src="/image/planeicon.svg" alt="">
+                    <p class="departureDate " id="departureDate"> Fri, 18 June </p>
+                </div>
+                <div class="flcol">
+                    <p id="takeoffTime" class="takeoffTime">
+                        10:50
+                    </p>
+                    <p id="takeoffPlace" class="takeoffPlace">
+                        HCM City
+                    </p>
+                </div>
+                <div class="flcol">
+                    <img src="/image/arrow1.svg" alt="">
+                    <p class="flytime" id="flyTime"> 1 h 30 m</p>
+                    <p class="stop" id="stop">No stop</p>
+                </div>
+                <div class="flcol">
+                    <p id="landingTime" class="landingTime">
+                        10:50
+                    </p>
+                    <p id="landingPlace" class="landingPlace">
+                        HCM City
+                    </p>
+                </div>
+                <div class="flcol">
+                    <p id="ticketPrice" class="ticketPrice"> 900.000 đ</p>
+                </div>
+            </div>
+            <hr style="margin-right:60px">
+        </div>
+    </div>
+    <!---something -->
+    <div class="footer">
+        <div class="ftcontent">
+    
+            <div class="ftbrand">
+                <img src="/image/logo.png" alt="">
+                <div class="name">APCS <span>Airline</span></div>
+                <div class="motto">
+                    Adventure is worthwhile
+                </div>
+            </div>
+    
+            <div class="col booking">
+                <h4>BOOKING</h3>
+                    <p>Flight ticket</p>
+                    <p>Accommodation</p>
+                    <p>Payment</p>
+                    <p>Shuttle service</p>
+            </div>
+            <div class="col agency">
+                <h4>OUR AGENCY</h3>
+                    <p>service</p>
+                    <p>Refund policy</p>
+                    <p>Payment</p>
+                    <p>Agency</p>
+            </div>
+            <div class="col partners">
+                <h4>PARTNERS</h3>
+                    <p>Vietnam Airlines (VNA)</p>
+                    <p>Vietjet Air (VJ)</p>
+                    <p>Jetstar Pacific Airlines (BL)</p>
+                    <p>Bamboo Airways (QH)</p>
+            </div>
+            <div class="col contact">
+                <h4>CONTACT</h4>
+                <p>Question or feedback </p>
+                <p>We'd love to here from you
+                <div class="sns">
+                    <img src="/image/facebook.png" style="border-radius: 7px;" alt="">
+                    <img src="/image/ig.png" alt="">
+                    <img src="/image/zalo.png" alt="">
+                </div>
+                </p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright @ All rights reserved</p>
+        </div>
+    </div> 
+</body>
+</html>
