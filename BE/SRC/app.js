@@ -9,7 +9,9 @@ const cookieParser = require('cookie-parser')
 
 // Import routes
 const indexUser = require("./routes/index")
+const city = require("./routes/city_airport")
 const { registerValidation, loginValidation } = require("./auth/validation")
+
 const bcrypt = require("bcryptjs")
 
 //application/x-www-form-urlencoded
@@ -22,6 +24,7 @@ app.use(cookieParser());
 app.set("view engine", "ejs")
 //middleware
 app.use('/api/user', indexUser)
+app.use('api/city', city)
 
 app.listen(port, function() {
         console.log("Server listening port", +port)
