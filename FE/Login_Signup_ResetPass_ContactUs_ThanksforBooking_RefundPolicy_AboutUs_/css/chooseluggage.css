@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,400;0,700;1,200;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+*{
+    font-family: 'Raleway', sans-serif;
+}
+
+/*Title*/
+.luggage-container{
+    width: 573px;
+    height: 750px;
+    border-radius: 50px;
+    margin-left: 100px;
+    border: 1px solid #000;
+}
+.title, .include-luggage{
+    display: flex;
+    flex-direction: row;
+}
+.title{
+    margin-top: 35px;
+    margin-left: 50px;
+}
+.sub-include, .total-luggage{
+    margin-top: -20px;
+}
+.sub-include{
+    margin-left: 10px;
+}
+.total-luggage{
+    margin-left: 180px;
+}
+.luggage-icon img{
+    width: 53px;
+    height: 45px;
+}
+.included, .total, .kilo, .total-kilo{
+    font-size: 18px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 600;
+}
+.included, .total{
+    color: rgb(0,0,0,0.5);
+}
+.kilo, .total-kilo{
+    margin-top: -12px;
+}
+
+/*Choose luggage*/
+.luggage-border{
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;
+    width: 508px;
+    height: 44px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    margin-left: 30px;
+    margin-top: 28px;
+}
+.add-kilo, .fee{
+    font-family: 'Rubik',sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+}
+.add-kilo{
+    margin-left: 20px;
+    margin-top: 15px;
+}
+.fee{
+    color: #fb9c0d;
+    margin-left: 260px;
+    margin-top: 13px;
+    margin-left: 300px;
+    font-weight: 700;
+}
+
+/*Button*/
+.continue-button{
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+    background-color: #000;
+    border-radius: 6px;
+    width: 219px;
+    height: 54px;
+    margin-top: 35px;
+    margin-left: 175px;
+}
+.continue-button:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+
