@@ -9,10 +9,12 @@ const cookieParser = require('cookie-parser')
 
 // Import routes
 const indexUser = require("./routes/index")
+<<<<<<< HEAD
 const city = require("./routes/city")
 const order= require("./routes/order")
+=======
+>>>>>>> BE-fix
 const { registerValidation, loginValidation } = require("./auth/validation")
-
 const bcrypt = require("bcryptjs")
 
 //application/x-www-form-urlencoded
@@ -25,8 +27,11 @@ app.use(cookieParser());
 app.set("view engine", "ejs")
 //middleware
 app.use('/api/user', indexUser)
+<<<<<<< HEAD
 app.use('api/order', order)
 app.use('api/city', city)
+=======
+>>>>>>> BE-fix
 
 app.listen(port, function() {
         console.log("Server listening port", +port)
