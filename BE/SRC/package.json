@@ -9,6 +9,7 @@
         "@hapi/joi": "^17.1.1",
         "@hapi/joi-date": "^2.0.1",
         "@joi/date": "^2.1.0",
+        "app-module-path": "^2.2.0",
         "axios": "^0.21.1",
         "bcryptjs": "^2.4.3",
         "body-parse": "^0.1.0",
