@@ -1,7 +1,7 @@
 const express = require("express");
 const app = express();
 const bodyParser = require('body-parser');
-const port = 3333;
+const port = 3000;
 const jwt = require("jsonwebtoken")
 require('dotenv').config()
 var mongoose = require('mongoose');
@@ -13,10 +13,6 @@ const session = require('express-session');
 
 // Import routes
 const indexUser = require("./routes/index")
-const facebook = require('./routes/facebookLogin')
-const googleUser = require("./routes/google")
-const quiz = require('./routes/createQuizs')
-const category = require('./routes/category')
 
 
 const { registerValidation, loginValidation } = require("./auth/validation")
@@ -33,10 +29,6 @@ app.use(cors())
 
 //middleware
 app.use('/api/user', indexUser)
-app.use('/facebookLogin', facebook);
-app.use('/authenticate', googleUser)
-app.use('/quiz', quiz);
-app.use('/category', category)
 
 
 // Lắng nghe các requests
