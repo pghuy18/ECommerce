@@ -1,0 +1,82 @@
+
+.body{
+    margin: 0;
+    background: #f3f3f3;
+}
+.bgpolicy{
+    background-color: #f3f3f3;
+    background-image: url(/image/bgbeach.jpg);
+    background-repeat: no-repeat;
+    width: 100%; 
+    height: 100vh;
+    background-size: cover;
+    margin-top: -25px;
+}
+.rf{
+    background: #f3f3f3;
+    margin-top: -100px;
+    padding-top: 100px;
+    padding-bottom: 200px;
+}
+.rflayout{
+    margin: 0px 300px;
+}
+.rflayout h2{
+    margin-bottom: -60px;
+    margin-top: -20px;
+    text-align: center;
+    font-size: 48px;
+    color: #FB9C0D;
+}
+.policy{
+    margin-top: 80px;
+    justify-content: center;
+}
+.subpolicy{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+.subpolicy h3{
+    color: #FB9C0D;
+    font-size: 36px;
+  
+}
+.subpolicy button{
+    border:none;
+    background: none;
+    color: #000;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Raleway',serif;
+    text-align: right;
+
+}
+.subpolicy button:hover{
+    color: #898989;
+}
+.policyct{
+    margin: 10px 0px;
+    margin-top: -20px;
+    width: 1250px;
+    height: fit-content;
+    background: #FFFFFF;
+    border-radius: 5px;
+    padding: 40px 40px;
+}
+ul{
+    
+}
+li{
+    font-size: 30px;
+    margin: 20px 0px;
+}
+li a{
+    color: #FB9C0D;
+    text-decoration: none;
+}
+li a:hover{
+    color:#898989;
+    text-decoration: underline;
+}
