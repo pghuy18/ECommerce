@@ -25,7 +25,7 @@ router.post('/register', async(req, res) => {
         try {
             const User = await newuser.save()
             console.log("Save on dtb successfull");
-            return res.send(User);
+            return res.status(200).send(User);
         } catch (err) {
             console.log("Promise Rejected");
             return res.status(400).send(err);
