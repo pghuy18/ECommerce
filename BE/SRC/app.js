@@ -14,6 +14,7 @@ const session = require('express-session');
 // Import routes
 const indexUser = require("./routes/index")
 const input = require("./routes/input")
+const edit = require("./routes/edit")
 
 
 const { registerValidation, loginValidation } = require("./auth/validation")
@@ -31,6 +32,7 @@ app.use(cors())
 //middleware
 app.use('/api/user', indexUser)
 app.use('/api/input', input)
+app.use('/api/edit', edit)
 
 
 // Lắng nghe các requests

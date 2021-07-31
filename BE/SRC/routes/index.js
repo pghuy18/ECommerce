@@ -50,4 +50,15 @@ router.post('/login', async function(req, res) {
     return res.status(200).header("auth-token", token).send(token);
 })
 
+router.get('/:username', (req, res) => {
+    try {
+        const User = await user.findOne({username: req.params.username});
+        if (!User)
+            return res.status(404).send("User not found");
+        return res.status(200).send(User);
+    } catch (err) {
+        return res.status(400).send(err)
+    }
+})
+
 module.exports = router
