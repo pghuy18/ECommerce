@@ -11,6 +11,7 @@ const orderSchema = mongoose.Schema({
     shuttleID: { required: true, type: mongoose.SchemaTypes.ObjectId },
     price: { required: true, type: Number, default: 0 },
     passengerID: { required: true, type: mongoose.SchemaTypes.ObjectId },
+    status: { required: true, type: String, default: 'red'}
 }, { collection: 'orders' })
 //---------------------------------------------------------------------------
 
