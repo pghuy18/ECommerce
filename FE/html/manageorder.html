@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!----LINK CSS-->
     <link rel="stylesheet" href="/css/header.css">
-    <link rel="stylesheet" href="/css/mnfl.css">
-    <title>Flights</title>
+    <link rel="stylesheet" href="/css/mnorder.css">
+    <title>Flight order</title>
 </head>
 <body>
 <div class="navbar">
@@ -91,11 +91,13 @@
 
     <div class="flightscontent">
         <div class="flrow">
+            <div class="flcol">
+                <h3 style="margin-left:-20px;margin-right: 30px; " id="username"> username</h3>
+            </div>
             <div class="flcol-1">
                 <img src="/image/vietjet.jpg" id="flightlogo" alt="">
                 <div class="flbrandinfo">
                     <h3 id="flightname">Vietjet air</h3>
-                    <h4 id="flightid"> VJ123 <span style="font-family: 'Rubik', serif;" id="planeid"> Airbus 333</span></h4>
                 </div>
             </div>
             <div style="width:158px" class="flcol">
@@ -111,10 +113,8 @@
                 </p>
             </div>
 
-            <div class="flcol">
-                <img src="/image/arrow1.svg" alt="">
-                <p class="flytime" id="flyTime"> 1 h 30 m</p>
-                <p class="stop" id="stop">No stop</p>
+            <div class="flcol arrow">
+                <img src="/image/arrowshort.svg" style="width:60px; margin-top: 10px;" alt="">
             </div>
 
             <div class="flcol">
@@ -130,247 +130,433 @@
                 <p id="ticketPrice" class="ticketPrice"> 900.000 đ</p>
             </div>
             <div class="flcol icon">
-                <img class="button edit" src="/image/edit.svg" alt="">
-                <img class="button delete" src="/image/delete.svg" alt="">
+                <img class="button edit" src="/image/Viewdetail.svg" alt="">
+                <p class="viewdetail"> View detail</p>
+                
+            </div>
+        </div>
+        <hr style="margin-right:60px">
+        <!--------->
+        <div class="flrow">
+            <div class="flcol">
+                <h3 style="margin-left:-20px;margin-right: 30px; " id="username"> username</h3>
+            </div>
+            <div class="flcol-1">
+                <img src="/image/vietjet.jpg" id="flightlogo" alt="">
+                <div class="flbrandinfo">
+                    <h3 id="flightname">Vietjet air</h3>
+                </div>
+            </div>
+            <div style="width:158px" class="flcol">
+                <img style="height: 38px;" src="/image/planeicon.svg" alt="">
+                <p class="departureDate " id="departureDate"> Fri, 18 June </p>
+            </div>
+            <div class="flcol">
+                <p id="takeoffTime" class="takeoffTime">
+                    10:50
+                </p>
+                <p id="takeoffPlace" class="takeoffPlace">
+                    HCM City
+                </p>
+            </div>
+
+            <div class="flcol arrow">
+                <img src="/image/arrowshort.svg" style="width:60px; margin-top: 10px;" alt="">
+            </div>
+
+            <div class="flcol">
+                <p id="landingTime" class="landingTime">
+                    10:50
+                </p>
+                <p id="landingPlace" class="landingPlace">
+                    HCM City
+                </p>
+            </div>
+
+            <div class="flcol">
+                <p id="ticketPrice" class="ticketPrice"> 900.000 đ</p>
+            </div>
+            <div class="flcol icon">
+                <img class="button edit" src="/image/Viewdetail.svg" alt="">
+                <p class="viewdetail"> View detail</p>
+                
+            </div>
+        </div>
+        <hr style="margin-right:60px">
+        <!--------->
+        <div class="flrow">
+            <div class="flcol">
+                <h3 style="margin-left:-20px;margin-right: 30px; " id="username"> username</h3>
+            </div>
+            <div class="flcol-1">
+                <img src="/image/vietjet.jpg" id="flightlogo" alt="">
+                <div class="flbrandinfo">
+                    <h3 id="flightname">Vietjet air</h3>
+                </div>
+            </div>
+            <div style="width:158px" class="flcol">
+                <img style="height: 38px;" src="/image/planeicon.svg" alt="">
+                <p class="departureDate " id="departureDate"> Fri, 18 June </p>
+            </div>
+            <div class="flcol">
+                <p id="takeoffTime" class="takeoffTime">
+                    10:50
+                </p>
+                <p id="takeoffPlace" class="takeoffPlace">
+                    HCM City
+                </p>
+            </div>
+
+            <div class="flcol arrow">
+                <img src="/image/arrowshort.svg" style="width:60px; margin-top: 10px;" alt="">
+            </div>
+
+            <div class="flcol">
+                <p id="landingTime" class="landingTime">
+                    10:50
+                </p>
+                <p id="landingPlace" class="landingPlace">
+                    HCM City
+                </p>
+            </div>
+
+            <div class="flcol">
+                <p id="ticketPrice" class="ticketPrice"> 900.000 đ</p>
+            </div>
+            <div class="flcol icon">
+                <img class="button edit" src="/image/Viewdetail.svg" alt="">
+                <p class="viewdetail"> View detail</p>
+                
+            </div>
+        </div>
+        <hr style="margin-right:60px">
+        <!--------->
+        <div class="flrow">
+            <div class="flcol">
+                <h3 style="margin-left:-20px;margin-right: 30px; " id="username"> username</h3>
+            </div>
+            <div class="flcol-1">
+                <img src="/image/vietjet.jpg" id="flightlogo" alt="">
+                <div class="flbrandinfo">
+                    <h3 id="flightname">Vietjet air</h3>
+                </div>
+            </div>
+            <div style="width:158px" class="flcol">
+                <img style="height: 38px;" src="/image/planeicon.svg" alt="">
+                <p class="departureDate " id="departureDate"> Fri, 18 June </p>
+            </div>
+            <div class="flcol">
+                <p id="takeoffTime" class="takeoffTime">
+                    10:50
+                </p>
+                <p id="takeoffPlace" class="takeoffPlace">
+                    HCM City
+                </p>
+            </div>
+
+            <div class="flcol arrow">
+                <img src="/image/arrowshort.svg" style="width:60px; margin-top: 10px;" alt="">
+            </div>
+
+            <div class="flcol">
+                <p id="landingTime" class="landingTime">
+                    10:50
+                </p>
+                <p id="landingPlace" class="landingPlace">
+                    HCM City
+                </p>
+            </div>
+
+            <div class="flcol">
+                <p id="ticketPrice" class="ticketPrice"> 900.000 đ</p>
+            </div>
+            <div class="flcol icon">
+                <img class="button edit" src="/image/Viewdetail.svg" alt="">
+                <p class="viewdetail"> View detail</p>
+                
+            </div>
+        </div>
+        <hr style="margin-right:60px">
+        <!---------><div class="flrow">
+            <div class="flcol">
+                <h3 style="margin-left:-20px;margin-right: 30px; " id="username"> username</h3>
+            </div>
+            <div class="flcol-1">
+                <img src="/image/vietjet.jpg" id="flightlogo" alt="">
+                <div class="flbrandinfo">
+                    <h3 id="flightname">Vietjet air</h3>
+                </div>
+            </div>
+            <div style="width:158px" class="flcol">
+                <img style="height: 38px;" src="/image/planeicon.svg" alt="">
+                <p class="departureDate " id="departureDate"> Fri, 18 June </p>
+            </div>
+            <div class="flcol">
+                <p id="takeoffTime" class="takeoffTime">
+                    10:50
+                </p>
+                <p id="takeoffPlace" class="takeoffPlace">
+                    HCM City
+                </p>
+            </div>
+
+            <div class="flcol arrow">
+                <img src="/image/arrowshort.svg" style="width:60px; margin-top: 10px;" alt="">
+            </div>
+
+            <div class="flcol">
+                <p id="landingTime" class="landingTime">
+                    10:50
+                </p>
+                <p id="landingPlace" class="landingPlace">
+                    HCM City
+                </p>
+            </div>
+
+            <div class="flcol">
+                <p id="ticketPrice" class="ticketPrice"> 900.000 đ</p>
+            </div>
+            <div class="flcol icon">
+                <img class="button edit" src="/image/Viewdetail.svg" alt="">
+                <p class="viewdetail"> View detail</p>
+                
+            </div>
+        </div>
+        <hr style="margin-right:60px">
+        <!---------><div class="flrow">
+            <div class="flcol">
+                <h3 style="margin-left:-20px;margin-right: 30px; " id="username"> username</h3>
+            </div>
+            <div class="flcol-1">
+                <img src="/image/vietjet.jpg" id="flightlogo" alt="">
+                <div class="flbrandinfo">
+                    <h3 id="flightname">Vietjet air</h3>
+                </div>
+            </div>
+            <div style="width:158px" class="flcol">
+                <img style="height: 38px;" src="/image/planeicon.svg" alt="">
+                <p class="departureDate " id="departureDate"> Fri, 18 June </p>
+            </div>
+            <div class="flcol">
+                <p id="takeoffTime" class="takeoffTime">
+                    10:50
+                </p>
+                <p id="takeoffPlace" class="takeoffPlace">
+                    HCM City
+                </p>
+            </div>
+
+            <div class="flcol arrow">
+                <img src="/image/arrowshort.svg" style="width:60px; margin-top: 10px;" alt="">
+            </div>
+
+            <div class="flcol">
+                <p id="landingTime" class="landingTime">
+                    10:50
+                </p>
+                <p id="landingPlace" class="landingPlace">
+                    HCM City
+                </p>
+            </div>
+
+            <div class="flcol">
+                <p id="ticketPrice" class="ticketPrice"> 900.000 đ</p>
+            </div>
+            <div class="flcol icon">
+                <img class="button edit" src="/image/Viewdetail.svg" alt="">
+                <p class="viewdetail"> View detail</p>
+                
+            </div>
+        </div>
+        <hr style="margin-right:60px">
+        <!---------><div class="flrow">
+            <div class="flcol">
+                <h3 style="margin-left:-20px;margin-right: 30px; " id="username"> username</h3>
+            </div>
+            <div class="flcol-1">
+                <img src="/image/vietjet.jpg" id="flightlogo" alt="">
+                <div class="flbrandinfo">
+                    <h3 id="flightname">Vietjet air</h3>
+                </div>
+            </div>
+            <div style="width:158px" class="flcol">
+                <img style="height: 38px;" src="/image/planeicon.svg" alt="">
+                <p class="departureDate " id="departureDate"> Fri, 18 June </p>
+            </div>
+            <div class="flcol">
+                <p id="takeoffTime" class="takeoffTime">
+                    10:50
+                </p>
+                <p id="takeoffPlace" class="takeoffPlace">
+                    HCM City
+                </p>
+            </div>
+
+            <div class="flcol arrow">
+                <img src="/image/arrowshort.svg" style="width:60px; margin-top: 10px;" alt="">
+            </div>
+
+            <div class="flcol">
+                <p id="landingTime" class="landingTime">
+                    10:50
+                </p>
+                <p id="landingPlace" class="landingPlace">
+                    HCM City
+                </p>
+            </div>
+
+            <div class="flcol">
+                <p id="ticketPrice" class="ticketPrice"> 900.000 đ</p>
+            </div>
+            <div class="flcol icon">
+                <img class="button edit" src="/image/Viewdetail.svg" alt="">
+                <p class="viewdetail"> View detail</p>
+                
+            </div>
+        </div>
+        <hr style="margin-right:60px">
+        <!---------><div class="flrow">
+            <div class="flcol">
+                <h3 style="margin-left:-20px;margin-right: 30px; " id="username"> username</h3>
+            </div>
+            <div class="flcol-1">
+                <img src="/image/vietjet.jpg" id="flightlogo" alt="">
+                <div class="flbrandinfo">
+                    <h3 id="flightname">Vietjet air</h3>
+                </div>
+            </div>
+            <div style="width:158px" class="flcol">
+                <img style="height: 38px;" src="/image/planeicon.svg" alt="">
+                <p class="departureDate " id="departureDate"> Fri, 18 June </p>
+            </div>
+            <div class="flcol">
+                <p id="takeoffTime" class="takeoffTime">
+                    10:50
+                </p>
+                <p id="takeoffPlace" class="takeoffPlace">
+                    HCM City
+                </p>
+            </div>
+
+            <div class="flcol arrow">
+                <img src="/image/arrowshort.svg" style="width:60px; margin-top: 10px;" alt="">
+            </div>
+
+            <div class="flcol">
+                <p id="landingTime" class="landingTime">
+                    10:50
+                </p>
+                <p id="landingPlace" class="landingPlace">
+                    HCM City
+                </p>
+            </div>
+
+            <div class="flcol">
+                <p id="ticketPrice" class="ticketPrice"> 900.000 đ</p>
+            </div>
+            <div class="flcol icon">
+                <img class="button edit" src="/image/Viewdetail.svg" alt="">
+                <p class="viewdetail"> View detail</p>
+                
+            </div>
+        </div>
+        <hr style="margin-right:60px">
+        <!---------><div class="flrow">
+            <div class="flcol">
+                <h3 style="margin-left:-20px;margin-right: 30px; " id="username"> username</h3>
+            </div>
+            <div class="flcol-1">
+                <img src="/image/vietjet.jpg" id="flightlogo" alt="">
+                <div class="flbrandinfo">
+                    <h3 id="flightname">Vietjet air</h3>
+                </div>
+            </div>
+            <div style="width:158px" class="flcol">
+                <img style="height: 38px;" src="/image/planeicon.svg" alt="">
+                <p class="departureDate " id="departureDate"> Fri, 18 June </p>
+            </div>
+            <div class="flcol">
+                <p id="takeoffTime" class="takeoffTime">
+                    10:50
+                </p>
+                <p id="takeoffPlace" class="takeoffPlace">
+                    HCM City
+                </p>
+            </div>
+
+            <div class="flcol arrow">
+                <img src="/image/arrowshort.svg" style="width:60px; margin-top: 10px;" alt="">
+            </div>
+
+            <div class="flcol">
+                <p id="landingTime" class="landingTime">
+                    10:50
+                </p>
+                <p id="landingPlace" class="landingPlace">
+                    HCM City
+                </p>
+            </div>
+
+            <div class="flcol">
+                <p id="ticketPrice" class="ticketPrice"> 900.000 đ</p>
+            </div>
+            <div class="flcol icon">
+                <img class="button edit" src="/image/Viewdetail.svg" alt="">
+                <p class="viewdetail"> View detail</p>
+                
+            </div>
+        </div>
+        <hr style="margin-right:60px">
+        <!---------><div class="flrow">
+            <div class="flcol">
+                <h3 style="margin-left:-20px;margin-right: 30px; " id="username"> username</h3>
+            </div>
+            <div class="flcol-1">
+                <img src="/image/vietjet.jpg" id="flightlogo" alt="">
+                <div class="flbrandinfo">
+                    <h3 id="flightname">Vietjet air</h3>
+                </div>
+            </div>
+            <div style="width:158px" class="flcol">
+                <img style="height: 38px;" src="/image/planeicon.svg" alt="">
+                <p class="departureDate " id="departureDate"> Fri, 18 June </p>
+            </div>
+            <div class="flcol">
+                <p id="takeoffTime" class="takeoffTime">
+                    10:50
+                </p>
+                <p id="takeoffPlace" class="takeoffPlace">
+                    HCM City
+                </p>
+            </div>
+
+            <div class="flcol arrow">
+                <img src="/image/arrowshort.svg" style="width:60px; margin-top: 10px;" alt="">
+            </div>
+
+            <div class="flcol">
+                <p id="landingTime" class="landingTime">
+                    10:50
+                </p>
+                <p id="landingPlace" class="landingPlace">
+                    HCM City
+                </p>
+            </div>
+
+            <div class="flcol">
+                <p id="ticketPrice" class="ticketPrice"> 900.000 đ</p>
+            </div>
+            <div class="flcol icon">
+                <img class="button edit" src="/image/Viewdetail.svg" alt="">
+                <p class="viewdetail"> View detail</p>
+                
             </div>
         </div>
         <hr style="margin-right:60px">
         <!--------->
         
-        <div class="flrow">
-            <div class="flcol-1">
-                <img src="/image/vietjet.jpg" id="flightlogo" alt="">
-                <div class="flbrandinfo">
-                    <h3 id="flightname">Vietjet air</h3>
-                    <h4 id="flightid"> VJ123 <span style="font-family: 'Rubik', serif;" id="planeid"> Airbus 333</span></h4>
-                </div>
-            </div>
-            <div style="width:158px" class="flcol">
-                <img style="height: 38px;" src="/image/planeicon.svg" alt="">
-                <p class="departureDate " id="departureDate"> Fri, 18 June </p>
-            </div>
-            <div class="flcol">
-                <p id="takeoffTime" class="takeoffTime">
-                    10:50
-                </p>
-                <p id="takeoffPlace" class="takeoffPlace">
-                    HCM City
-                </p>
-            </div>
 
-            <div class="flcol">
-                <img src="/image/arrow1.svg" alt="">
-                <p class="flytime" id="flyTime"> 1 h 30 m</p>
-                <p class="stop" id="stop">No stop</p>
-            </div>
-
-            <div class="flcol">
-                <p id="landingTime" class="landingTime">
-                    10:50
-                </p>
-                <p id="landingPlace" class="landingPlace">
-                    HCM City
-                </p>
-            </div>
-
-            <div class="flcol">
-                <p id="ticketPrice" class="ticketPrice"> 900.000 đ</p>
-            </div>
-            <div class="flcol icon">
-                <img class="button edit" src="/image/edit.svg" alt="">
-                <img class="button delete" src="/image/delete.svg" alt="">
-            </div>
-        </div>
-        <hr style="margin-right:60px">
-        <!--------->
-
-        <div class="flrow">
-            <div class="flcol-1">
-                <img src="/image/vietjet.jpg" id="flightlogo" alt="">
-                <div class="flbrandinfo">
-                    <h3 id="flightname">Vietjet air</h3>
-                    <h4 id="flightid"> VJ123 <span style="font-family: 'Rubik', serif;" id="planeid"> Airbus 333</span></h4>
-                </div>
-            </div>
-            <div style="width:158px" class="flcol">
-                <img style="height: 38px;" src="/image/planeicon.svg" alt="">
-                <p class="departureDate " id="departureDate"> Fri, 18 June </p>
-            </div>
-            <div class="flcol">
-                <p id="takeoffTime" class="takeoffTime">
-                    10:50
-                </p>
-                <p id="takeoffPlace" class="takeoffPlace">
-                    HCM City
-                </p>
-            </div>
-
-            <div class="flcol">
-                <img src="/image/arrow1.svg" alt="">
-                <p class="flytime" id="flyTime"> 1 h 30 m</p>
-                <p class="stop" id="stop">No stop</p>
-            </div>
-
-            <div class="flcol">
-                <p id="landingTime" class="landingTime">
-                    10:50
-                </p>
-                <p id="landingPlace" class="landingPlace">
-                    HCM City
-                </p>
-            </div>
-
-            <div class="flcol">
-                <p id="ticketPrice" class="ticketPrice"> 900.000 đ</p>
-            </div>
-            <div class="flcol icon">
-                <img class="button edit" src="/image/edit.svg" alt="">
-                <img class="button delete" src="/image/delete.svg" alt="">
-            </div>
-        </div>
-        <hr style="margin-right:60px">
-        <!--------->
-
-        <div class="flrow">
-            <div class="flcol-1">
-                <img src="/image/vietjet.jpg" id="flightlogo" alt="">
-                <div class="flbrandinfo">
-                    <h3 id="flightname">Vietjet air</h3>
-                    <h4 id="flightid"> VJ123 <span style="font-family: 'Rubik', serif;" id="planeid"> Airbus 333</span></h4>
-                </div>
-            </div>
-            <div style="width:158px" class="flcol">
-                <img style="height: 38px;" src="/image/planeicon.svg" alt="">
-                <p class="departureDate " id="departureDate"> Fri, 18 June </p>
-            </div>
-            <div class="flcol">
-                <p id="takeoffTime" class="takeoffTime">
-                    10:50
-                </p>
-                <p id="takeoffPlace" class="takeoffPlace">
-                    HCM City
-                </p>
-            </div>
-
-            <div class="flcol">
-                <img src="/image/arrow1.svg" alt="">
-                <p class="flytime" id="flyTime"> 1 h 30 m</p>
-                <p class="stop" id="stop">No stop</p>
-            </div>
-
-            <div class="flcol">
-                <p id="landingTime" class="landingTime">
-                    10:50
-                </p>
-                <p id="landingPlace" class="landingPlace">
-                    HCM City
-                </p>
-            </div>
-
-            <div class="flcol">
-                <p id="ticketPrice" class="ticketPrice"> 900.000 đ</p>
-            </div>
-            <div class="flcol icon">
-                <img class="button edit" src="/image/edit.svg" alt="">
-                <img class="button delete" src="/image/delete.svg" alt="">
-            </div>
-        </div>
-        <hr style="margin-right:60px">
-        <!--------->
-
-        <div class="flrow">
-            <div class="flcol-1">
-                <img src="/image/vietjet.jpg" id="flightlogo" alt="">
-                <div class="flbrandinfo">
-                    <h3 id="flightname">Vietjet air</h3>
-                    <h4 id="flightid"> VJ123 <span style="font-family: 'Rubik', serif;" id="planeid"> Airbus 333</span></h4>
-                </div>
-            </div>
-            <div style="width:158px" class="flcol">
-                <img style="height: 38px;" src="/image/planeicon.svg" alt="">
-                <p class="departureDate " id="departureDate"> Fri, 18 June </p>
-            </div>
-            <div class="flcol">
-                <p id="takeoffTime" class="takeoffTime">
-                    10:50
-                </p>
-                <p id="takeoffPlace" class="takeoffPlace">
-                    HCM City
-                </p>
-            </div>
-
-            <div class="flcol">
-                <img src="/image/arrow1.svg" alt="">
-                <p class="flytime" id="flyTime"> 1 h 30 m</p>
-                <p class="stop" id="stop">No stop</p>
-            </div>
-
-            <div class="flcol">
-                <p id="landingTime" class="landingTime">
-                    10:50
-                </p>
-                <p id="landingPlace" class="landingPlace">
-                    HCM City
-                </p>
-            </div>
-
-            <div class="flcol">
-                <p id="ticketPrice" class="ticketPrice"> 900.000 đ</p>
-            </div>
-            <div class="flcol icon">
-                <img class="button edit" src="/image/edit.svg" alt="">
-                <img class="button delete" src="/image/delete.svg" alt="">
-            </div>
-        </div>
-        <hr style="margin-right:60px">
-        <!--------->
-
-        <div class="flrow">
-            <div class="flcol-1">
-                <img src="/image/vietjet.jpg" id="flightlogo" alt="">
-                <div class="flbrandinfo">
-                    <h3 id="flightname">Vietjet air</h3>
-                    <h4 id="flightid"> VJ123 <span style="font-family: 'Rubik', serif;" id="planeid"> Airbus 333</span></h4>
-                </div>
-            </div>
-            <div style="width:158px" class="flcol">
-                <img style="height: 38px;" src="/image/planeicon.svg" alt="">
-                <p class="departureDate " id="departureDate"> Fri, 18 June </p>
-            </div>
-            <div class="flcol">
-                <p id="takeoffTime" class="takeoffTime">
-                    10:50
-                </p>
-                <p id="takeoffPlace" class="takeoffPlace">
-                    HCM City
-                </p>
-            </div>
-
-            <div class="flcol">
-                <img src="/image/arrow1.svg" alt="">
-                <p class="flytime" id="flyTime"> 1 h 30 m</p>
-                <p class="stop" id="stop">No stop</p>
-            </div>
-
-            <div class="flcol">
-                <p id="landingTime" class="landingTime">
-                    10:50
-                </p>
-                <p id="landingPlace" class="landingPlace">
-                    HCM City
-                </p>
-            </div>
-
-            <div class="flcol">
-                <p id="ticketPrice" class="ticketPrice"> 900.000 đ</p>
-            </div>
-            <div class="flcol icon">
-                <img class="button edit" src="/image/edit.svg" alt="">
-                <img class="button delete" src="/image/delete.svg" alt="">
-            </div>
-        </div>
-        <hr style="margin-right:60px">
-        <!--------->
+        
     </div>
 </div>
 <div class="footer">
