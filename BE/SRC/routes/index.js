@@ -50,7 +50,7 @@ router.post('/login', async function(req, res) {
     return res.status(200).header("auth-token", token).send(token);
 })
 
-router.get('/:username', (req, res) => {
+router.get('/:username', async (req, res) => {
     try {
         const User = await user.findOne({username: req.params.username});
         if (!User)

@@ -1,27 +1,24 @@
 const { TooManyRequests } = require("http-errors")
 const mongoose = require("mongoose")
 
+const contactSchema = mongoose.Schema({
+    contacter: { required: true, type: String },
+    email: { required: true, type: String },
+    tel: { required: true, type: String }
+})
 //main
 const orderSchema = mongoose.Schema({
     userID: { required: true, type: mongoose.SchemaTypes.ObjectId },
     luggageID: { required: true, type: mongoose.SchemaTypes.ObjectId },
     serviceID: { required: true, type: mongoose.SchemaTypes.ObjectId },
     flightID: { required: true, type: mongoose.SchemaTypes.ObjectId },
-    contact: { required: true, type: String },
+    contact: { required: true, type: contactSchema },
     shuttleID: { required: true, type: mongoose.SchemaTypes.ObjectId },
     price: { required: true, type: Number, default: 0 },
-    passengerID: { required: true, type: mongoose.SchemaTypes.ObjectId },
+    passenger: { required: true, type: Array },
     status: { required: true, type: String, default: 'red'}
-}, { collection: 'orders' })
+}, { collection: 'orders' }) //sửa database
 //---------------------------------------------------------------------------
-
-//passenger
-const passengerSchema = mongoose.Schema({
-    name: { required: true, type: mongoose.SchemaTypes.ObjectId },
-    dob: { required: true, type: String },
-    nationality: { required: true, type: String },
-}, { collection: 'passenger' })
-//----------------------------------------------------------------------------
 
 //flight
 const flightSchema = mongoose.Schema({
@@ -30,7 +27,6 @@ const flightSchema = mongoose.Schema({
     to: { required: true, type: mongoose.SchemaTypes.ObjectId },
     departureTime: { required: true, type: String },
     landingTime: { required: true, type: String },
-    classID: { required: true, type: mongoose.SchemaTypes.ObjectId },
     price: { required: true, type: Number, default: 0 },
 }, { collection: 'flight' })
 
@@ -40,7 +36,7 @@ const airlineSchema = mongoose.Schema({
 
 const airplaneSchema = mongoose.Schema({
     airlineID: { required: true, type: mongoose.SchemaTypes.ObjectId },
-    name: { required: true, type: mongoose.SchemaTypes.ObjectId }
+    name: { required: true, type: String }
 }, { collection: 'airplane' })
 
 const citySchema = mongoose.Schema({
@@ -63,8 +59,7 @@ const serviceSchema = mongoose.Schema({
     fee: { required: true, type: Number, default: 0 }
 }, { collection: 'service' })
 const shuttleSchema = mongoose.Schema({
-    name: { required: true, type: String },
-    fee: { required: true, type: Number, default: 0 }
+    name: { required: true, type: String }
 }, { collection: 'shuttle' })
 const classSchema = mongoose.Schema({
     name: { required: true, type: String },
@@ -76,11 +71,11 @@ module.exports = {
     flight: mongoose.model('flight', flightSchema),
     airline: mongoose.model('airline', airlineSchema),
     airplane: mongoose.model('airplane', airplaneSchema),
-    passenger: mongoose.model('passenger', passengerSchema),
     city: mongoose.model('city', citySchema),
     airport: mongoose.model('airport', airportSchema),
     luggage: mongoose.model('luggage', luggageSchema),
     service: mongoose.model('service', serviceSchema),
     shuttle: mongoose.model('shuttle', shuttleSchema),
-    planeclass: mongoose.model('planeclass', classSchema)
+    planeclass: mongoose.model('planeclass', classSchema),
+    contact: mongoose.model('contact', contactSchema)
 }

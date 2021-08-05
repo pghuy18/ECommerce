@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
 const user = require("../models/user")
-const {order, flight, airline, airplane, passenger, city, airport, luggage, service, shuttle, planeclass} = require('../models/order')
+const {order, flight, airline, airplane, city, airport, luggage, service, shuttle, planeclass, contact} = require('../models/order')
 const jwt = require("jsonwebtoken")
 const verify = require('../auth/checkToken')
 const bcrypt = require("bcryptjs");
@@ -15,10 +15,9 @@ router.post('/order', async (req,res) => {
             return res.status(404).send("User not found")
         temp.userID = User._id
 
-        const Luggage = new luggage()
-        Luggage.name = req.body.luggageName
-        Luggage.fee = req.body.luggagefee
-        const tmp = await Luggage.save()
+        const Luggage = await luggage.findOne({luggageName: req.body.luggageName})
+        if (!Luggage)
+            return res.status(404).send("Luggage not found")
         temp.luggageID = Luggage._id
 
         const Service = await service.findOne({name: req.body.serviceName})
@@ -31,20 +30,20 @@ router.post('/order', async (req,res) => {
             return res.status(404).send("Flight not found")
         temp.flightID = Flight._id
 
-        temp.contact = req.body.contact
+        const Contact = new contact()
+        Contact.contacter = req.body.contacter
+        Contact.email = req.body.email
+        Contact.tel = req.body.tel
+        temp.contact = Contact
 
         const Shuttle = await shuttle.findOne({name: req.body.shuttleName})
         if (!Shuttle)
             return res.status(404).send("Shuttle not found")
         temp.shuttleID = Shuttle._id
-        temp.price = Flight.price + Shuttle.fee + Luggage.fee + Service.fee
 
-        const Passenger = new passenger()
-        Passenger.name = req.body.passengerName
-        Passenger.dob = req.body.passengerDOB
-        Passenger.nationality = req.body.passengerNationality
-        const teemp = await Passenger.save()
-        temp.passengerID = Passenger._id
+        temp.price = Flight.price + Luggage.fee + Service.fee
+
+        temp.passenger = req.body.passenger
 
         const tempp = await temp.save()
         return res.status(201).send(temp)
@@ -73,11 +72,7 @@ router.post('/flight', async (req,res) => {
 
         temp.departureTime = req.body.departureTime
         temp.landingTime = req.body.landingTime
-        
-        const planeClass = await planeclass.findOne({name: req.body.className})
-        if (!planeClass)
-            return res.status(404).send("Class not found")
-        temp.class = planeClass._id
+
         temp.price = req.body.price
 
         const tmp = await temp.save()
@@ -205,6 +200,21 @@ router.post('/class', async (req, res) => {
         temp.fee = req.body.fee
         const tmp = await temp.save()
         return res.status(201).send(temp)
+    } catch (err) {
+        return res.status(400).send(err)
+    }
+})
+
+router.post('/luggage', async (req,res)=>{
+    try {
+        const check = await luggage.findOne({name: req.body.name})
+        if (check)
+            return res.status(404).send("Luggage has already been created")
+        const Luggage = new luggage()
+        Luggage.name = req.body.name
+        Luggage.fee = req.body.fee
+        const temp = await Luggage.save()
+        return res.status(201).send(Luggage)
     } catch (err) {
         return res.status(400).send(err)
     }

@@ -1,7 +1,21 @@
-POST http://localhost:3333/api/user/login
+POST http://localhost:3333/api/input/order
 Content-Type: application/json
 
 {
-    "username": "anhtu",
-    "password": "123456"
+	"username": "string",
+	"luggageName": "string",
+	"serviceName": "string",
+	"flightID": "string",
+	"contacter": "string",
+	"email": "mail",
+	"tel": "string",
+	"shuttleName": "string",
+	"passenger": [
+		{
+		"passengerName": "string",
+		"passengerDOB": "string",
+		"passengerNationality": "string"
+		}
+    ]
+
 }

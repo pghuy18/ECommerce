@@ -6,7 +6,7 @@ const jwt = require("jsonwebtoken")
 const verify = require('../auth/checkToken')
 const bcrypt = require("bcryptjs");
 
-router.patch('/flight/:id', (req,res) => {
+router.patch('/flight/:id', async (req,res) => {
     try {
         const update = req.body;
         const option = { new: true };
@@ -20,7 +20,7 @@ router.patch('/flight/:id', (req,res) => {
     }
 })
 
-router.patch('/order/:id', (req,res) =>{
+router.patch('/order/:id', async (req,res) =>{
     try {
         const update = req.body;
         const option = { new: true };
