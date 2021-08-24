@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "@handlebars/allow-prototype-access": "^1.0.3",
-    "axios": "^0.21.0",
+    "axios": "^0.21.1",
     "chalk": "^4.1.0",
     "cookie-parser": "~1.4.4",
     "cors": "^2.8.5",
