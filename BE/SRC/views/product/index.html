@@ -1,0 +1,178 @@
+<link rel="stylesheet" href="/css/bootstrap/bootstrap.min.css" />
+<button id="btnCreate" class="badge-pill">CREATE</button>
+<div class="row">
+  <div class="col-9">
+    <table class="table table-borderred">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Image</th>
+          <th>Category</th>
+          <th>Price</th>
+          <th>Size</th>
+          <th>Quantity</th>
+          <th>Update</th>
+          <th>Delete</th>
+        </tr>
+      </thead>
+      <tbody id="sheet">
+        <tr>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+          <td>
+            <img src="/images/crud/edit.png" alt="edit.png" width="50px" />
+          </td>
+          <td>DELETE</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="col-3">
+    <div>
+      <form
+        style="margin-left: 2rem; margin-top: -2.5rem; display: none"
+        class="form-check-input"
+        id="createFrm"
+        action=""
+        method="POST"
+      >
+        <div class="row">
+          <div class="col-7">
+            <h2 id="titleForm" class="form-check-input-heading">Create</h2>
+          </div>
+
+          <div class="col-5">
+            <h2><button type="button" id="createClearBtn">Clear</button></h2>
+          </div>
+        </div>
+
+        <div>
+          <select class="form-control text-center" id="selectInfo" name="info" required>
+            <option class="form-control text-center" value="">------Info------</option>
+          </select>
+        </div>
+
+        <div>
+          <!-- <label for="inputName" class="sr-only">Email address</label> -->
+          <input
+            type="number"
+            min="1"
+            id="inputPrice"
+            name="price"
+            class="form-control"
+            placeholder="Price"
+            required
+            autofocus
+          />
+        </div>
+
+        <div>
+          <label for="inputQuote" class="sr-only">Quote</label>
+          <input
+            type="number"
+            min="0.5"
+            step="0.5"
+            id="inputSize"
+            name="size"
+            class="form-control"
+            placeholder="Size"
+            required
+          />
+        </div>
+        <div>
+          <label for="inputDecription" class="sr-only">Description</label>
+          <input
+            type="number"
+            min="1"
+            step="1"
+            id="inputQuantity"
+            name="quantity"
+            class="form-control"
+            placeholder="Quantity"
+            required
+          />
+        </div>
+
+        <br />
+        <button class="btn btn-danger btn-default btn-block" type="submit">SUBMIT</button>
+      </form>
+    </div>
+    <div>
+      <form
+        style="margin-left: 2rem; margin-top: -2.5rem; display: none"
+        class="form-check-input"
+        id="updateFrm"
+        action=""
+        method="POST"
+      >
+        <div class="row">
+          <div class="col-7">
+            <h2 id="titleForm" class="form-check-input-heading">Update</h2>
+          </div>
+          <div class="col-5"></div>
+        </div>
+        <input type="hidden" name="id" />
+        <div>
+          <select class="form-control text-center" id="selectInfo" name="info" required>
+            <option class="form-control text-center" value="">------Info------</option>
+          </select>
+        </div>
+
+        <div>
+          <!-- <label for="" class="sr-only">Price</label> -->
+          <input
+            type="number"
+            min="1"
+            id="inputPrice"
+            name="price"
+            class="form-control"
+            placeholder="Price"
+            autofocus
+            required
+          />
+        </div>
+
+        <div>
+          <!-- <label for="" class="sr-only">Size</label> -->
+          <input
+            type="number"
+            min="0.5"
+            step="0.5"
+            id="inputSize"
+            name="size"
+            class="form-control"
+            placeholder="Size"
+            required
+          />
+        </div>
+        <div>
+          <!-- <label for="" class="sr-only">Quantity</label> -->
+          <input
+            type="number"
+            min="1"
+            step="1"
+            id="inputQuantity"
+            name="quantity"
+            class="form-control"
+            required
+            placeholder="Quantity"
+            required
+          />
+        </div>
+
+        <br />
+        <button class="btn btn-danger btn-default btn-block" type="submit">SUBMIT</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- list of api -->
+
+<script src="/js/app/api/product.js"></script>
+<script src="/js/app/api/productInfo.js"></script>
+<script src="/js/app/product/index.js"></script>

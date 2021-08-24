@@ -1,0 +1,86 @@
+<link rel="stylesheet" href="/css/style/checkout.css" />
+
+<div class="layout">
+  <div class="ending">
+    <div class="information">
+      <h3>GIỎ HÀNG</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Sub Name</th>
+            <th>Price</th>
+          </tr>
+        </thead>
+
+        <tbody id="sheet">
+          <tr>
+            <td></td>
+            <td></td>
+            <td id="total" style="background-color: #F9AD6A"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="contact">
+      <h3>INFORMATION</h3>
+      <form action="" method="POST" id="frm">
+        <div class="txtfield">
+          <input type="text" required name="fullName" />
+          <label> Full Name </label>
+        </div>
+
+        <div class="txtfield">
+          <input type="text" name="phoneNumber" required />
+          <label> Phone </label>
+        </div>
+        <div>
+          <select class="vietnam" name="province" id="province" required>
+            <option value="">Tỉnh Thành</option>
+          </select>
+          <select class="vietnam" name="district" id="district" required>
+            <option value="">Quận Huyện</option>
+          </select>
+          <select class="vietnam" name="ward" id="ward" required>
+            <option value="">Xã Phường</option>
+          </select>
+        </div>
+        <div class="txtfield">
+          <input type="text" required name="address" placeholder="Address" />
+          <label for="">Address</label>
+        </div>
+
+        <div
+          class="nut"
+          style="
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-top: 50px;
+          "
+        >
+          <input  class="inforbut"
+            type="Submit"
+            value="Cancel"
+            style="background: #F5D277; border: solid 3px #f9e07f; color: #264D59
+            "
+          />
+          <input class="inforbut" type="Submit" value="Confirm" />
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <footer>
+    &copy; Copyright 2021 HTML.am
+    <hr />
+    <p>
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+      Ipsum has been the industry's standard dummy text ever since the 1500s
+    </p>
+  </footer>
+</div>
+
+<script src="/js/app/api/cart.js"></script>
+<script src="/js/app/api/order.js"></script>
+<script src="/js/app/cart/checkout.js"></script>

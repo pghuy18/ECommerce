@@ -1,0 +1,79 @@
+<link rel="stylesheet" href="/css/style/stylelogin.css" />
+<div class="item2">
+  <div class="align">
+    <div class="login">
+      <h1>Login</h1>
+
+      <form id="frm">
+        <div class="txtfield">
+          <input
+            type="text"
+            id="inputUserName"
+            name="username"
+            placeholder="User Name"
+            required
+            autofocus
+          />
+          <label>User Name</label>
+        </div>
+
+        <div class="txtfield">
+          <input
+            type="password"
+            id="inputPassword"
+            name="password"
+            placeholder="Password"
+            required
+          />
+          <label> Password </label>
+        </div>
+        
+        <div class="txtfield check" >
+        <label for="">Remember Me</label>
+
+        <input type="checkbox" name="remember" id="" />
+          </label>
+        </div>
+        <!-- <div class="pass">Forgot password?</div> -->
+
+        <input type="Submit" value="Login" />
+
+        <div class="signup_link">
+          NOT A MEMBER? <a href="/user/register"> Register Now </a>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+<!-- 
+<div>{{>navbar}}</div>
+<form class="form-signin" action="" id="frm" method="POST">
+  <h2 class="form-signin-heading">Please Login</h2>
+
+  <label for="inputEmail" class="sr-only">User Name</label>
+  <input
+    type="text"
+    id="inputUserName"
+    name="username"
+    class="form-control"
+    placeholder="User Name"
+    required
+    autofocus
+  />
+
+  <label for="inputPassword" class="sr-only">Password</label>
+  <input
+    type="password"
+    id="inputPassword"
+    name="password"
+    class="form-control"
+    placeholder="Password"
+    required
+  />
+
+  <br />
+
+  <button class="btn btn-lg btn-default btn-block" type="submit">Login</button>
+</form> -->
+
+<script src="/js/app/user/login.js"></script>

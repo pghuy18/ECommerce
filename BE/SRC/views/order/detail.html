@@ -1,0 +1,119 @@
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/style/payment.css">
+    <title>Document</title>
+</head>
+
+
+<style>
+    .paymentChoose{
+        background-color: burlywood;
+    }
+</style>
+<body>
+    <div class="row">
+        <h2><a href="/" style="color: burlywood;"><strong>Home</strong></a></h2>
+    </div>
+    <div class="container">
+        <div class="row">
+            <h2>Payment method</h2>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="card">
+                    <img src="/images/img/internet banking.png" alt="">
+                </div>
+                <h5>Internet banking</h4>
+            </div>
+            
+             <div class="col">
+                <div class="card">
+                    <img src="/images/img/deposit card.png" alt="">
+                </div>
+                <h5>Deposit card</h3>
+            </div>
+            
+            <div class="col">
+                <div class="card" >
+                    <img src="/images/img/visa-master card.png" alt="">
+                </div>
+                <h5>Visa-Master card</h3>
+            </div>
+
+            <div class="col">
+                <div class="card" id="cash">
+                    <img src="/images/img/cash on delivery.png" alt="">
+                </div>
+                <h5>Cash on delivery </h4>
+            </div>
+        </div>
+
+        <div class="row"  >
+            <div class="col-6" style="width: 800 ;"  >
+                    <form action="post" id="frm" style="display: none;">
+                    <div class="txtfield">
+                        <input type="text" name="holder" style="color: whitesmoke;" required>
+                        <label> Card holder </label>
+                    </div>
+
+                    <div class="txtfield">
+                        <input type="text" name="cardNum" style="color: whitesmoke;"required>
+                        <label> Card number </label>
+                    </div>
+
+                    <div class="txtfield">
+                        <input type="text" name="cardNum" style="color: whitesmoke;"required>
+                        <label> Amount of money </label>
+                    </div>
+
+                    <div class="txtfield">
+                        <input type="text" name="cardNum" style="color: whitesmoke;"required>
+                        <label> Content </label>
+                    </div>
+
+               
+                    <div class="txtfield">
+                        <input type="text" name="pin"  style="color: whitesmoke;"required>
+                        <label> PIN </label>
+                    </div>
+                </form>
+               
+         </div>
+         <div class="col-3"  id="infor">
+             <div>
+                <label> Receiver:</label>
+                <label for=""><p style="color: whitesmoke;" id="receiver"></p></label>
+             </div>
+             <div >
+                <label style="display: initial;"> Address:</label>
+                <label for=""><p style="color: whitesmoke;" id="address"></p></label>
+             </div>
+             <div>
+                <label> Phone:</label>
+                <label for=""><p style="color: whitesmoke;" id="phone"></p></label>
+             </div>
+             <div>
+                <label> Total Cost:</label>
+                <label for=""><p style="color: whitesmoke;" id="cost"></p></label>
+             </div>
+             <div>
+                <input class="btn" type="Submit" value="Confirm">
+             </div>
+         </div>
+        </div>
+    </div>
+</body>
+
+<script src="/js/libs/axios.min.js"></script>
+<script src="/js/app/api/base.js"></script>
+<script src="/js/app/api/app.js"></script>
+<script src="/js/app/api/order.js"></script>
+<script src="/js/app/helper.js"></script>
+<script src="/js/libs/jquery.js"></script>
+<script src="/js/app/order/detail.js"></script>
+
+
+
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+

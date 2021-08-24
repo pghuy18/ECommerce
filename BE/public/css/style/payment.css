@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
+body{
+    margin: 0;
+    padding: 100px 100px 0px;
+    max-width: 1440%;
+    background-color: #264d59;
+    align-items: center;
+}
+.container{
+    align-items: center;
+    width:max-content;
+    align-items: center;
+}
+.row{
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: max-content;
+}
+.col{
+    max-width: 180px;
+    margin: 40px 40px;
+    align-items: center;
+}
+.card{
+    background-color: rgb(255,255,255,0.5);
+    padding: 10px 10px 0;
+}
+.card:hover{
+    position: relative;
+    background-color: #F9AD6A;
+    margin-top: -5px;
+}
+
+h5{
+    font-size: 15px;
+    margin-top: 10px;
+    text-align: center;
+    color: ivory;
+}
+h2{
+    text-align: center;
+    color: #F9AD6A;
+    font-size: 27px;
+    font-family:'Prata', serif;
+
+}
+
+label{
+    color: #F9AD6A;
+    font-weight: 500;
+    font-size: 18px;
+    margin-bottom: -4px;
+}
+.txtfield{
+    position: relative;
+    border-bottom: 2px solid #43978d ;
+    margin: 30px 0;
+}
+
+.txtfield input{
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+}
+.txtfield label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color:#F9AD6A;
+    transform: translateY(-50%);
+    pointer-events: none;
+    font-family:'Prata', serif;
+    font-size: 16px;
+}
+
+.txtfield span::before{
+    content:'';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: #f9e07f;
+    transition: 0.5;
+}
+.txtfield input:focus ~ label,
+.txtfield input:valid ~ label{
+    top: -5px;
+    color: #F9AD6A;
+    font-family:'Prata', serif;
+}
+.txtfield input:focus ~ span::before,
+.txtfield input:valid ~ span::before{
+    width: 100%;
+    font-family:'Prata', serif;
+}
+
+input[type="submit"]{
+    margin: 10px 5px;
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-radius: 25px;
+    background: #F9AD6A;
+    font-size: 15px;
+    font-weight: 500;
+    color: #264D59;
+}
+input[type="submit"]:hover{
+    background-color: #264D59;
+    color:#F9AD6A;
+    border: solid 2px #F9AD6A;
+}

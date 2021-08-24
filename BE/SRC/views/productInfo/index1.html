@@ -1,0 +1,204 @@
+<link rel="stylesheet" href="/css/style/stylecrud.css">
+<link rel="stylesheet" href="/css/style/style.css">
+
+
+<div class="item2">
+  <div class="table">
+    <div class="but">
+      <button id="btnCreate" class="create"> Create </button>
+    </div>
+    <table class="table table-light">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Image</th>
+          <th>Sub Name</th>
+          <th>Decription</th>
+          <th>Category</th>
+          <th>Update</th>
+          <th>Delete</th>
+
+        </tr>
+      </thead>
+      <tbody id="sheet">
+        <!-- <tr>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+          <td > UPDATE</td>
+          <td >DELETE</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+          <td > UPDATE</td>
+          <td >DELETE</td>
+        </tr>
+      
+        <tr>
+          <td>nam1</td>
+          <td> <img src="" alt=""> Hinh</td>
+          <td>quote1</td>
+          <td>desciption1</td>
+          <td>name </td>
+          <td><a href="#"> Update </a></td>
+          <td><a href="#">Delete</a></td>
+        </tr> -->
+      </tbody>
+    </table>
+  </div>
+
+  <div class="aside">
+    <div class="formbg"  >
+      <form class="forminput" id="createFrm" action="" method="POST" style="display:none;">
+        <div class=row>
+          <h2 id="titleForm">Create</h2>
+          <button type="button" id="createClearBtn">Clear</button>
+        </div>
+        <div class="row">
+
+          <input type="text" id="inputName" name="name" class="formcontrol" placeholder="Name" autofocus />
+        </div>
+
+        <div class="row">
+          <label for="" class="">Cateogry</label>
+          <select class="form-control text-center" id="selectCategory">
+            <option class="form-control text-center" value="">------Category------</option>
+          </select>
+  
+          <input id="inputCategory" name="category" type="hidden" value="" />
+          <textarea
+            id="txtCategory"
+            class="form-control"
+            cols="30"
+            rows="2"
+            placeholder="Category"
+            disabled="true"
+          ></textarea>
+        </div>
+
+        <div class="row">
+
+          <label for="inputSubname" class="sr-only">Sub Name</label>
+          <textarea
+            id="inputSubname"
+            name="subname"
+            class="form-control"
+            cols="30"
+            rows="3"
+            placeholder="Sub Name"
+          ></textarea>
+        </div>
+
+        <div class="row">
+          <label for="inputDecription" class="sr-only">Description</label>
+          <textarea
+            id="inputDecription"
+            name="description"
+            class="form-control"
+            cols="30"
+            rows="3"
+            placeholder="Description"
+          ></textarea>
+        </div>
+        <div class="row">
+          <img id="currentImg" src="" alt="" />
+        </div>
+        <div>
+          <label for="inputImage" class="sr-only">Image</label>
+          <input
+            type="file"
+            id="inputImg"
+            name="img"
+            class="form-control"
+            placeholder="Image"
+          />
+        </div>
+        <br />
+        <button class="btnCreate" type="submit">CREATE</button>
+      </form>
+     
+    </div>
+    <div class="formbg">
+      <form class="forminput" id="updateFrm" action="" method="POST" style="display: none;">
+        <div class=row>
+          <h2 id="titleForm">UPDATE</h2>
+        </div>
+        <input type="hidden" name="id" id="inputId" />
+        <div class="row">
+
+          <input type="text" id="inputName" name="name" class="formcontrol" placeholder="Name" autofocus />
+        </div>
+
+        <div class="row">
+          <label for="inputName" class="form-control sr-only"><button type="button" id="btnClearCategory">Clear Category</button></label>
+          <select class="form-control text-center" id="selectCategory">
+            <option class="form-control text-center" value="">------Category------</option>
+          </select>
+  
+          <input id="inputCategory" name="category" type="hidden" value="" />
+          <textarea
+          id="txtCategory"
+          cols="30"
+          rows="2"
+          placeholder="Category"
+          disabled="true"
+          required
+          ></textarea>
+          
+        </div>
+
+        <div class="row">
+
+          <label for="inputSubname" class="sr-only">Sub Name</label>
+          <textarea
+            id="inputSubname"
+            name="subname"
+            class="form-control"
+            cols="30"
+            rows="3"
+            placeholder="Sub Name"
+          ></textarea>
+        </div>
+
+        <div class="row">
+          <label for="inputDecription" class="sr-only">Description</label>
+          <textarea
+            id="inputDecription"
+            name="description"
+            class="form-control"
+            cols="30"
+            rows="3"
+            placeholder="Description"
+          ></textarea>
+        </div>
+        <div class=row>
+          <img id="currentImg" src="" alt="" />
+        </div>
+        <div>
+          <label for="inputImage" class="sr-only">Image</label>
+          <img src="" alt="" id="currentImg" width="100px" />
+          <input type="hidden" name="imgUrl" />
+          <input
+            type="file"
+            id="inputImg"
+            name="img"
+            class="form-control"
+            placeholder="Image"
+          />
+        </div>
+        <br />
+        <button type="submit" class="upbut">UPDATE</button>
+      </form>
+    </div>
+  </div>
+</div>
+</div>
+<script src="/js/app/api/category.js"></script>
+<script src="/js/app/api/productInfo.js"></script>
+<script src="/js/app/productInfo/index.js"></script>

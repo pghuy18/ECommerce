@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Prata&display=swap");
+
+*img{ border-radius: 0px;}
+
+.layout{
+    background-color: #264559;
+    padding: 50px 100px;
+    height: 100%;
+}
+
+table{
+  margin: 0;
+  width: fit-content;
+}
+table thead tr th{
+  color: #edf0f1;
+  font-family: 'Catamaran',serif;
+  font-size: 30px;
+  padding: 0px 30px;
+  background: #D46C4E;
+}
+table tbody tr{
+  padding-top: 40px;
+}
+table tbody tr td, td a{
+  color: #edf0f1;
+  font-size: 25px;
+  padding: 20px 10px;
+}
+
+.ending{
+  display: flex;
+  flex-direction: row;
+  padding-top: 10px;
+ 
+  margin-bottom: 50px;
+}
+.information{
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  padding: 30px 30px;
+  border-radius: 20px;
+  margin-right: 30px;
+  padding-top: 20px;
+  width: fit-content;
+}
+.information, .contact{
+  text-align: left;
+  margin: 0;
+  width: fit-content;
+}
+.contact{
+  width: 500px;
+  margin-left: 10px; 
+  text-align: center;
+  justify-content: left;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  padding: 30px 30px;
+  border-radius: 20px;
+}
+.information h3, .contact h3{
+  font-size: 30px;
+  color: azure;
+  font-family: 'Prata',serif;
+  font-weight: 400;
+}
+
+.information h3{
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+
+footer{
+  padding-top: 50px;
+  padding-bottom: 5px;
+  align-content: center;
+  text-align: center; 
+  color: rgb(170, 170, 170);
+}
+
+input[type="submit"]{
+  margin: 10px 5px;
+  width: 200px;
+  height: 50px;
+  border: solid 3px #f9e07f;
+  border-radius: 25px;
+  background: #F9E07F;
+  font-size: 20px;
+  font-weight: 500;
+  color: #264D59;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+input[type="submit"]:hover{
+  background: #264D59 !important;
+  color: #F5D277 !important;
+}
+
+
+.txtfield{
+  position: relative;
+  border-bottom: 2px solid #43978d ;
+  margin: 30px 0;
+}
+
+.txtfield input{
+  width: 100%;
+  padding: 0 5px;
+  height: 40px;
+  font-size: 16px;
+  border: none;
+  background: none;
+  outline: none;
+}
+.contact label{
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  color:azure;
+  transform: translateY(-50%);
+  pointer-events: none;
+  font-family:'Prata', serif;
+  font-size: 16px;
+}
+
+.contact span::before{
+  content:'';
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #f9e07f;
+  transition: 0.5;
+}
+.contact input:focus ~ label,
+.contact input:valid ~ label{
+  top: -5px;
+  color: azure;
+  font-family:'Prata', serif;
+}
+.contact input:focus ~ span::before,
+.contact input:valid ~ span::before{
+  width: 100%;
+  font-family:'Prata', serif;
+}
+.vietnam{
+  background-color: #F9AD6A;
+  color: #FFFFFF;
+}
+.vietnam option{
+  color: #FFFFFF;
+}
+

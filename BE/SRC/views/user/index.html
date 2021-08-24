@@ -1,0 +1,99 @@
+<link rel="stylesheet" href="/css/style/stylecrud.css">
+<link rel="stylesheet" href="/css/style/style.css">
+
+
+<div class="item2">
+    <div class="table">
+        <div class="but">
+            <button id="btnCreate" class="create"> Create </button>
+        </div>
+        <table class="table table-light">
+            <thead>
+                <tr>
+                    <th>UserName</th>
+                    <th>Email</th>
+                    <th>FullName</th>
+                    <th>PhoneNumber</th>
+                    <th>BirthDate</th>
+                    <th>UPDATE</th>
+                    <th>DELETE</th>
+                </tr>
+            </thead>
+            <tbody id="sheet">
+                <tr>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td > UPDATE</td>
+                    <td >DELETE</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>1</td> 
+                      <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td > UPDATE</td>
+                    <td >DELETE</td>
+                </tr>
+
+                <tr>
+                    <td>1</td>
+                    <td>1</td> 
+                      <td>1</td>
+                    <td>desciption1</td>
+                    <td>name </td>
+                    <td>Update </td>
+                    <td>Delete</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="aside">
+        <div class="formbg">
+            <form class="forminput" id="createFrm" action="" method="POST" style="display:none;">
+                <div class=row>
+                  <h2 id="titleForm">Create</h2>
+                  <button type="button" id="createClearBtn">Clear</button>
+                </div>
+                <div class="row">
+                    <label for="">Email</label>
+                  <input type="text" id="inputEmail" name="email" class="formcontrol" placeholder="Email" autofocus  required/>
+                </div>
+
+                <div class="row">
+                    <label for="">UserName</label>
+                  <input type="text" id="inputUsername" name="username" class="formcontrol" placeholder="User Name" autofocus required />
+                </div>
+
+                <div class="row">
+                    <label for="">Password</label>
+                  <input type="password" name="password" id="inputPassword" placeholder="Password" required>
+                </div>
+
+                <br />
+                <button class="btnCreate" type="submit">CREATE</button>
+              </form>
+
+        </div>
+        <div class="formbg">
+            <form class="forminput" id="updateFrm" action="" method="POST" style="display: none;">
+                <div class=row>
+                    <h2 id="titleForm">UPDATE</h2>
+                </div>
+                <input type="hidden" name="username">
+                <div>
+                    <label for="">New Password</label>
+                    <input type="password" name="password" id="inputNewPassword" required placeholder="new Password">
+                </div>
+                <br />
+                <button type="submit">UPDATE</button>
+            </form>
+        </div>
+    </div>
+</div>
+</div>
+<script src="/js/app/user/index.js"></script>

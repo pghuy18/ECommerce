@@ -1,0 +1,215 @@
+<link rel="stylesheet" href="/css/style/style.css" />
+<link rel="stylesheet" href="/css/bootstrap/bootstrap.min.css" />
+<button id="btn">TEST</button>
+<button id="btnCreate" class="badge-pill">CREATE</button>
+<div class="row">
+  <div class="col-9">
+    <table class="table table-borderred">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Image</th>
+          <th>Sub Name</th>
+          <th>Decription</th>
+          <th>Category</th>
+          <th>Update</th>
+          <th>Delete</th>
+        </tr>
+      </thead>
+      <tbody id="sheet">
+        <tr>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+          <td class="update">
+            <img src="/images/crud/edit.png" alt="edit.png" width="50px" />
+          </td>
+          <td class="del">DELTE</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="col-3">
+    <form
+      style="margin-left: 2rem; margin-top: -2.5rem; display: none"
+      class="form-check-input"
+      id="createFrm"
+      action=""
+      method="POST"
+    >
+      <div class="row">
+        <div class="col-7">
+          <h2 id="titleForm" class="form-check-input-heading">Create</h2>
+        </div>
+        <div class="col-5">
+          <h2><button type="button" id="createClearBtn">Clear</button></h2>
+        </div>
+      </div>
+
+      <div>
+        <input
+          type="text"
+          id="inputName"
+          name="name"
+          class="form-control"
+          placeholder="Name"
+          autofocus
+        />
+      </div>
+
+      <div>
+        <label for="inputName" class="form-control sr-only">Cateogry</label>
+        <select class="form-control text-center" id="selectCategory">
+          <option class="form-control text-center" value="">------Category------</option>
+        </select>
+
+        <input id="inputCategory" name="category" type="hidden" value="" />
+        <textarea
+          id="txtCategory"
+          class="form-control"
+          cols="30"
+          rows="2"
+          placeholder="Category"
+          disabled="true"
+        ></textarea>
+      </div>
+
+      <div>
+        <label for="inputSubname" class="sr-only">Sub Name</label>
+        <textarea
+          id="inputSubname"
+          name="subname"
+          class="form-control"
+          cols="30"
+          rows="3"
+          placeholder="Sub Name"
+        ></textarea>
+      </div>
+      <div>
+        <label for="inputDecription" class="sr-only">Description</label>
+        <textarea
+          id="inputDecription"
+          name="description"
+          class="form-control"
+          cols="30"
+          rows="3"
+          placeholder="Description"
+        ></textarea>
+      </div>
+      <div>
+        <img id="currentImg" src="" alt="" />
+      </div>
+      <div>
+        <label for="inputImage" class="sr-only">Image</label>
+        <input
+          type="file"
+          id="inputImg"
+          name="img"
+          class="form-control"
+          placeholder="Image"
+        />
+      </div>
+      <br />
+      <button class="btn btn-danger btn-default btn-block" type="submit">SUBMIT</button>
+    </form>
+    <form
+      style="margin-left: 2rem; margin-top: -2.5rem; display: none"
+      class="form-check-input"
+      id="updateFrm"
+      action=""
+      method="POST"
+    >
+      <input type="hidden" name="id" id="inputId" />
+      <div class="row">
+        <div class="col-7">
+          <h2 id="titleForm" class="form-check-input-heading">Update</h2>
+        </div>
+        <div class="col-5"></div>
+      </div>
+
+      <div>
+        <input
+          type="text"
+          id="inputName"
+          name="name"
+          class="form-control"
+          placeholder="Name"
+          required
+          autofocus
+        />
+      </div>
+
+      <div>
+        <label for="inputName" class="form-control sr-only">Cateogry</label>
+        <select class="form-control text-center" id="selectCategory">
+          <option class="form-control text-center" value="">------Category------</option>
+        </select>
+        <div class="row">
+          <div class="col-9">
+            <textarea
+              id="txtCategory"
+              class="form-control"
+              cols="30"
+              rows="2"
+              placeholder="Category"
+              disabled="true"
+              required
+            ></textarea>
+          </div>
+          <div class="col-3">
+            <button type="button" id="btnClearCategory">Clear Category</button>
+          </div>
+        </div>
+        <input id="inputCategory" name="category" type="hidden" value="" />
+      </div>
+
+      <div>
+        <label for="inputSubname" class="sr-only">Sub Name</label>
+        <textarea
+          id="inputSubname"
+          name="subname"
+          class="form-control"
+          cols="30"
+          rows="3"
+          placeholder="Sub Name"
+        ></textarea>
+      </div>
+      <div>
+        <label for="inputDecription" class="sr-only">Description</label>
+        <textarea
+          id="inputDecription"
+          name="description"
+          class="form-control"
+          cols="30"
+          rows="3"
+          placeholder="Description"
+        ></textarea>
+      </div>
+      <div>
+        <img id="currentImg" src="" alt="" />
+      </div>
+      <div>
+        <label for="inputImage" class="sr-only">Image</label>
+        <img src="" alt="" id="currentImg" width="100px" />
+        <input type="hidden" name="imgUrl" />
+        <input
+          type="file"
+          id="inputImg"
+          name="img"
+          class="form-control"
+          placeholder="Image"
+        />
+      </div>
+      <br />
+      <button class="btn btn-danger btn-default btn-block" type="submit">SUBMIT</button>
+    </form>
+  </div>
+</div>
+
+<!-- list of api -->
+
+<script src="/js/app/api/category.js"></script>
+<script src="/js/app/api/productInfo.js"></script>
+<script src="/js/app/productInfo/index.js"></script>

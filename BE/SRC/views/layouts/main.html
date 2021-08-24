@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{title}}</title>
+
+    <!-- css -->
+   <link rel="stylesheet" href="/css/style/chat.css">
+    <link rel="stylesheet" href="/css/style/style.css" />
+    <!-- library -->
+    <script src="/js/libs/jquery.js"></script>
+    <script src="/js/libs/axios.min.js"></script>
+    <script src="/js/libs/qs.min.js"></script>
+    <script src="/js/libs/socket.io.js"></script>
+    <!-- api -->
+    <script src="/js/app/api/base.js"></script>
+    <script src="/js/app/api/app.js"></script>
+    <script src="/js/app/api/user.js"></script>
+    <script src="/js/app/helper.js"></script>
+    <script src="/js/app/layout/main.js"></script>
+  </head>
+  <body>
+    <div class="item1">
+      <header>
+        <div class="left">
+          <a href="/"><img class="logo" src="/images/img/logo2.png" alt=""   width="70px" /></a>
+          <nav>
+            <ul class="nav_links">
+              <li><a href="/">HOME</a></li>
+              <li><a href="/shop">COFFEE</a></li>
+              <li><a href="/aboutus">ABOUT US</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="right">
+          <button style="display: none;" id="chatBtn" >Support</button> 
+          <!-- <button id="covidBtn" ><a style="color: white;" href="/covid">Covid</a></button>  -->
+          <a href="/cart"> <button >Order</button> </a>
+          {{#if isAuthenticated}}
+          <a href="/user/profile"> <button id="btnProfile">Profile</button> </a>
+           <button id="btnLogout">Logout</button>
+          {{else}}
+          <a href="/user/register"> <button id="btnRegister">Register</button> </a>
+          <a href="/user/login"><button id="btnLogin">Login</button> </a>
+          </li>
+          {{/if}}
+        
+        </div>
+      </header>
+    </div>
+    <div>
+      <div id="success_msg" style="display: none;background-color:limegreen; text-align: center; " class="alert alert-success"></div>
+      <div id="error_msg" style="display: none;background-color: indianred; text-align: center; " class="alert alert-danger"></div>
+    </div>
+    <div id = "chatFrm" style="display: none;">
+          <input type = "button" id = "btnClose" value ="Close"/>
+      <div id = "listMessages">
+      </div>
+      <div id = "sendForm">
+          <input type = "text" id = "txtMessages"/>
+          <input type = "button" id = "btnSend" value = "Send"/>
+      </div>
+  </div>
+    <div class="container">{{{body}}}</div>
+  </body>
+</html>
+

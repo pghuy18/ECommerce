@@ -1,0 +1,26 @@
+<form action="" name="frm" method="post" enctype="multipart/form-data">
+  <input type="hidden" name="id" value="{{o._id}}" />
+  <div>
+    <label for="">Name</label>
+    <input type="text" name="name" value="{{o.name}}" required />
+  </div>
+  <div>
+    <label for="">Quote</label>
+    <textarea name="quote" cols="30" rows="3" placeholder="quote">{{o.quote}}</textarea>
+  </div>
+  <div>
+    <label for="">Description</label>
+    <textarea name="description" cols="30" rows="3" placeholder="Description">
+{{o.description}}</textarea
+    >
+  </div>
+  <div>
+    <label for="">Image</label>
+    <img id="tempImg" src="/images/coffee/{{o.imgUrl}}" alt="{{imgUrl}}" width="100px" />
+    <input type="hidden" name="imgUrl" id="imgUrl" value="{{o.imgUrl}}" />
+    <input type="file" id="img" name="img" />
+  </div>
+  <div><button>Create</button></div>
+</form>
+
+<script src="/js/productInfo/detail.js"></script>

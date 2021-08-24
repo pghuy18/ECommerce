@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{title}}</title>
+    <!-- css -->
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/bootstrap/bootstrap.min.css" />
+    <!-- library -->
+    <script src="/js/libs/jquery.js"></script>
+    <script src="/js/libs/axios.min.js"></script>
+    <script src="/js/libs/qs.min.js"></script>
+    <!-- api -->
+    <script src="/js/app/api/base.js"></script>
+    <script src="/js/app/api/app.js"></script>
+    <script src="/js/app/helper.js"></script>
+  </head>
+  <body>
+    {{#if success_messages }}
+    <div class="alert alert-success">{{{success_messages}}}</div>
+    {{/if}} {{#if error_messages }}
+    <div class="alert alert-danger">{{{error_messages}}}</div>
+    {{/if}}
+    <!-- <div class="container">{{> navbar}}</div> -->
+    <div id="success_msg" style="display: none" class="alert alert-success"></div>
+    <div id="error_msg" style="display: none" class="alert alert-danger"></div>
+
+    <a href="/user/logout">Logout</a>
+    <div class="container">{{{body}}}</div>
+  </body>
+</html>

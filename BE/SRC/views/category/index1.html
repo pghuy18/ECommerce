@@ -1,0 +1,85 @@
+<link rel="stylesheet" href="/css/style/stylecrud.css">
+<link rel="stylesheet" href="/css/style/style.css">
+
+
+<div class="item2">
+  <div class="table">
+    <div class="but">
+      <button id="btnCreate" class="create"> Create </button>
+    </div>
+    <table class="table table-light">
+      <thead>
+        <tr>
+            <th>Name</th>
+            <th>Update</th>
+            <th>Delete</th>
+
+        </tr>
+      </thead>
+      <tbody id="sheet">
+        <!-- <tr>
+            <td>1</td>
+            <td >
+                UPDATE
+              <img class="" src="/images/crud/edit.png" alt="edit.png" width="50px" />
+            </td>
+            <td>DELETE</td>
+          </tr> -->
+      </tbody>
+    </table>
+  </div>
+
+  <div class="aside">
+    <div class="formbg"  >
+      <form class="forminput" id="createFrm" action="" method="POST" style="display:none;">
+        <div class=row>
+          <h2 id="titleForm">Create</h2>
+          <button type="button" id="createClearBtn">Clear</button>
+        </div>
+
+        <div class="row" >
+          <input
+          type="text"
+          id="inputName"
+          name="name"
+          class="form-control"
+          placeholder="Name"
+          required
+          autofocus
+        />
+        </div>
+
+        <br />
+        <button class="btnCreate" type="submit">CREATE</button>
+      </form>
+     
+    </div>
+    <div class="formbg">
+      <form class="forminput" id="updateFrm" action="" method="POST" style="display: none;">
+        <div class=row>
+          <h2 id="titleForm">UPDATE</h2>
+        </div>
+        <input type="hidden" name="id">
+        <div>
+          <input
+            type="text"
+            id="inputName"
+            name="name"
+            class="form-control"
+            placeholder="Name"
+            autofocus
+          />
+        </div>
+
+        <br />
+        
+        <button type="submit" class="upbut">UPDATE</button>
+        
+      </form>
+    </div>
+  </div>
+</div>
+</div>
+<script src="/js/app/api/category.js"></script>
+
+<script src="/js/app/category/index.js"></script>

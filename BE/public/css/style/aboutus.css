@@ -1,0 +1,241 @@
+@import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Prata&display=swap");
+
+header{
+  display: flex;
+  flex-direction: row;
+}
+.layout{
+    background-color: #264559;
+    padding: 50px 300px;
+    height: 100%;
+}
+.start{
+  text-align: center;
+}
+.start p{ 
+  font-weight: 400;
+      font-size: 15px;
+    color:azure;
+    margin-top: 60px;
+    padding-left: 90px; ; padding-right: 90px ;
+
+}
+.start h3{
+    font-size: 40px;
+    font-weight: 500;
+    font-family: "Prata",serif;
+    color: azure;
+    margin-top: 100px;
+}
+
+.imgs{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 60px;
+}
+.imgs img{
+  height: 500px;
+  border-radius: 20px;
+  margin-top: 20px;
+}
+
+.storyline{
+  text-align: center;
+  padding-top: 250px;
+  display: flex;
+  flex-direction: row;
+}
+
+.storyline img{
+  height: 800px;
+}
+.bodytext h3, .bodytext h5, .bodytext p{
+  position: relative;
+  bottom: -100px;
+}
+.bodytext h3{
+  font-family: 'Prata',serif;
+  color: azure;
+  font-weight: 500;
+  font-size: 25px;
+  text-align: left;
+  
+}
+.bodytext h5{
+  font-family: 'Prata',serif;
+  color: #F9E07F;
+  font-weight: 500;
+  font-size: 19px;
+  text-align: left;
+  margin-top: 20px;
+}
+
+.bodytext p{
+  color:#F9E07F ;
+  font-weight: 400;
+  font-size: 13px;
+  text-align: left;
+  margin-top: 20px;
+  text-align: justify;
+  padding-right: 80px;
+}
+
+.ending{
+  display: flex;
+  flex-direction: row;
+  padding-top: 250px;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+.information, .contact{
+  text-align: center;
+}
+.information{
+ width: 600px ;
+ margin-right: 40px;
+ padding-top: 20px;
+}
+.contact{
+  width: 500px;
+  margin-left: 40px; 
+  text-align: center;
+  justify-content: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  padding: 30px 40px;
+  border-radius: 20px;
+}
+.information h3, .contact h3{
+  font-size: 30px;
+  color: azure;
+  font-family: 'Prata',serif;
+  font-weight: 400;
+}
+.information h5{
+  margin-top: 40px;
+  margin-bottom: 05px;
+  font-family: 'Prata',serif;
+  color: azure;
+  font-weight: 400;
+}
+.information p{
+  color: rgb(170, 170, 170);
+  margin-top: 2px;
+} 
+footer{
+  padding-top: 50px;
+  padding-bottom: 5px;
+  align-content: center;
+  text-align: center; 
+  color: rgb(170, 170, 170);
+}
+
+input[type="submit"]{
+  margin: 10px 5px;
+  width: 200px;
+  height: 50px;
+  border: none;
+  border-radius: 25px;
+  background: #F9E07F;
+  font-size: 20px;
+  font-weight: 500;
+  color: #264D59;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+input[type="submit"]:hover{
+  background: #F9AD6A;
+  
+}
+.txtfield{
+  position: relative;
+  border-bottom: 2px solid #43978d ;
+  margin: 30px 0;
+}
+
+.txtfield input{
+  width: 100%;
+  padding: 0 5px;
+  height: 40px;
+  font-size: 16px;
+  border: none;
+  background: none;
+  outline: none;
+}
+.contact label{
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  color:azure;
+  transform: translateY(-50%);
+  pointer-events: none;
+  font-family:'Prata', serif;
+  font-size: 16px;
+}
+
+.contact span::before{
+  content:'';
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #f9e07f;
+  transition: 0.5;
+}
+.contact input:focus ~ label,
+.contact input:valid ~ label{
+  top: -5px;
+  color: azure;
+  font-family:'Prata', serif;
+}
+.contact input:focus ~ span::before,
+.contact input:valid ~ span::before{
+  width: 100%;
+  font-family:'Prata', serif;
+}
+
+.packaga{
+  align-items: center;
+  width: max-content;
+  margin: 10px 100px;
+
+}
+h2{
+  text-align: center;
+  color:ivory;
+  font-weight: 400;
+  font-family:'Prata', serif;
+  font-size: 48px;
+  margin-top: 100px;
+}
+
+h4{
+  color:ivory;
+  font-family:'Prata', serif;
+  font-weight: 400;
+  font-size: 24px;
+  margin-top: 20px;
+  text-align: center;
+  background: rgb(255,255,255,0.2);
+  border: #F9AD6A solid 2px;
+  border-radius: 10px;
+}
+.rowp{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+.colp{
+  margin: 0 60px;
+  max-width: 250px;
+}
+.box img{
+  width: 230px;
+  border: solid #F9AD6A 4px;
+  border-radius: 5px;
+}
+.box{
+
+}

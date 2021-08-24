@@ -1,0 +1,46 @@
+<link rel="stylesheet" href="/css/style/style.css" />
+<link rel="stylesheet" href="/css/style/styleshop.css" />
+
+<div class="background">
+  <div class="row">
+    <div class="cardproduct" style="margin-left: 10cm">
+      <img
+        src="/images/productInfo/{{o.info.imgUrl}}"
+        alt="{{o.info.imgUrl}}"
+        class="imgproduct"
+      />
+      <h2 id="productName" class="name" style="color: red">
+        {{o.info.name}} {{o.size}}gr
+      </h2>
+      <h3 class="subname">{{o.info.subname}}</h3>
+      <div class="hc">
+        <form action="" id="cartFrm">
+          <h4 id="productPrice" class="price" style="color: black">
+            {{{money o.price}}}
+          </h4>
+          <input type="hidden" name="productId" value="{{o._id}}" />
+          <input
+            type="number"
+            name="quantity"
+            id=""
+            value="1"
+            min="1"
+            max="{{{o.quantity}}}"
+            step="1"
+          />
+          <button id="cartBtn" type="submit" style="margin-left: 100px">
+            Thêm vào giỏ
+          </button>
+        </form>
+      </div>
+    </div>
+    <div class="cardproduct">
+      <div id="productDescription" style="color: black">{{{o.info.description}}}</div>
+      <div id="productBestChoice"></div>
+    </div>
+  </div>
+</div>
+
+<script src="/js/app/api/productInfo.js"></script>
+<script src="/js/app/api/cart.js"></script>
+<script src="/js/app/home/detail.js"></script>

@@ -1,0 +1,73 @@
+<link rel="stylesheet" href="/css/bootstrap/bootstrap.min.css" />
+<div class="row">
+  <div class="col-5"></div>
+  <div class="col-7">
+    <form action="/search" id="searchFrm" method="GET">
+      <div>
+        <input type="text" name="q" value="{{q}}" placeholder="SEARCH" />
+        <button class="alert-danger">Search</button>
+      </div>
+    </form>
+  </div>
+</div>
+{{#if p}}
+<div class="row">
+  <div class="col-3"></div>
+  <div class="col-9">{{{pag p n}}}</div>
+</div>
+<div class="row">
+  <div class="col-4">
+    <select class="filter" id="selectPrice">
+      <option value="0">Price</option>
+      <option value="1">Ascending</option>
+      <option value="-1">Descending</option>
+      <option value="10000" s="1">Higher 10000</option>
+      <option value="10000" s="-1">Lower 10000</option>
+    </select>
+  </div>
+  <div class="col-4">
+    <select class="filter" id="selectName">
+      <option value="0">Name</option>
+      <option value="1">a-z</option>
+      <option value="-1">z-a</option>
+    </select>
+  </div>
+  <div class="col-4">
+    <select class="filter" id="selectUpdated">
+      <option value="0">Time</option>
+      <option value="1">Lastest</option>
+      <option value="-1">Oldest</option>
+    </select>
+  </div>
+</div>
+{{/if}} {{#if message }}
+<div class="text-center" style="color: cadetblue; margin-top: 10px">
+  <b>{{{message}}}</b>
+</div>
+{{/if}}
+<div class="row" id="sheet">
+  {{#each a}}
+  <div class="col-3">
+    <div style="text-align: left"><b>{{this.info.name}} {{this.size}}gr</b></div>
+    <div style="text-align: left">"{{this.info.subname}}"</div>
+    <div>
+      <a href="/detail/{{_id}}"
+        ><img
+          src="/images/productInfo/{{this.info.imgUrl}}"
+          alt="{{imgUrl}}"
+          width="100px"
+        />
+      </a>
+    </div>
+    <div>
+      <p><b>{{this.price}}</b></p>
+    </div>
+  </div>
+  {{/each}}
+</div>
+{{#if loadmore}}
+<div><button value="1" id="btnLoadmore">Load more</button></div>
+{{/if}}
+
+<script src="/js/app/api/product.js"></script>
+<script src="/js/app/home/index.js"></script>

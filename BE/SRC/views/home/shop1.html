@@ -1,0 +1,139 @@
+<link rel="stylesheet" href="/css/style/style.css" />
+<link rel="stylesheet" href="/css/style/styleshop.css" />
+<div class="aside">
+  <div class="row">
+    <form action="/search" id="searchFrm" method="GET">
+      <div>
+        <input class="searchbar" type="text" name="q" value="{{q}}" placeholder="SEARCH" />
+        <button class="alert-danger searchbut">Search</button>
+      </div>
+    </form>
+  </div>
+</div>
+{{#if p}}
+<div class="row">
+  <div class="col-3"></div>
+  <div class="col-9">{{{pag p n}}}</div>
+</div>
+<div class="row" style="margin-left: 20px; padding-left: 680px;">
+  <div>
+    <select class="filter" style="border: 2px solid #F9AD6A; box-sizing: border-box; border-radius: 15px;"  id="selectPrice">
+      <option value="0">Price</option>
+      <option value="1">Ascending</option>
+      <option value="-1">Descending</option>
+      <option value="500000" s="1">Higher 500.000d</option>
+      <option value="500000" s="-1">Lower 500.000d</option>
+    </select>
+  </div>
+  <div>
+    <select class="filter" style="border: 2px solid #F9AD6A; box-sizing: border-box; border-radius: 15px;" id="selectName">
+      <option value="0">Name</option>
+      <option value="1">a-z</option>
+      <option value="-1">z-a</option>
+    </select>
+  </div>
+  <div>
+    <select class="filter" style="border: 2px solid #F9AD6A; box-sizing: border-box; border-radius: 15px;" id="selectUpdated">
+      <option value="0">Time</option>
+      <option value="1">Lastest</option>
+      <option value="-1">Oldest</option>
+    </select>
+  </div>
+</div>
+
+</div>
+{{/if}} {{#if message }}
+<div class="text-center" style="color: cadetblue; margin-top: 10px">
+  <b>{{{message}}}</b>
+</div>
+{{/if}}
+<div class="background">
+  <div id="sheet">
+    {{#if a}}
+        {{{shop a}}}
+    {{/if}}
+    <!-- <div class="row">
+      <div class="cardproduct">
+       <img src="/images/packaging/culli.jpg" alt="" class="imgproduct" />
+        <h2 id="productName" class="name">Culli roasted coffee</h2>
+        <h3 class="subname">Cà phê culli rang xay</h3>
+        <div class="hc">
+          <h4 id="productPrice" class="price">45.000 đ</h4>
+          <button class="add">Thêm vào giỏ</button>
+        </div>
+      </div>
+      <div class="cardproduct">
+        <img src="/images/packaging/culli.jpg" alt="" class="imgproduct" />
+        <h2 id="productName" class="name">Culli roasted coffee</h2>
+        <h3 class="subname">Cà phê culli rang xay</h3>
+        <div class="hc">
+          <h4 id="productPrice" class="price">45.000 đ</h4>
+          <button class="add">Thêm vào giỏ</button>
+        </div>
+      </div>
+      <div class="cardproduct">
+        <img src="/images/packaging/culli.jpg" alt="" class="imgproduct" />
+        <h2 id="productName" class="name">Culli roasted coffee</h2>
+        <h3 class="subname">Cà phê culli rang xay</h3>
+        <div class="hc">
+          <h4 id="productPrice" class="price">45.000 đ</h4>
+          <button class="add">Thêm vào giỏ</button>
+        </div>
+      </div>
+      <div class="cardproduct">
+        <img src="/images/packaging/culli.jpg" alt="" class="imgproduct" />
+        <h2 id="productName" class="name">Culli roasted coffee</h2>
+        <h3 class="subname">Cà phê culli rang xay</h3>
+        <div class="hc">
+          <h4 id="productPrice" class="price">45.000 đ</h4>
+          <button class="add">Thêm vào giỏ</button>
+        </div>
+      </div>
+    </div>
+  
+    <div class="row">
+      <div class="cardproduct">
+        <img src="/images/packaging/culli.jpg" alt="" class="imgproduct" />
+        <h2 id="productName" class="name">Culli roasted coffee</h2>
+        <h3 class="subname">Cà phê culli rang xay</h3>
+        <div class="hc">
+          <h4 id="productPrice" class="price">45.000 đ</h4>
+          <button class="add">Thêm vào giỏ</button>
+        </div>
+      </div>
+      <div class="cardproduct">
+        <img src="/images/packaging/culli.jpg" alt="" class="imgproduct" />
+        <h2 id="productName" class="name">Culli roasted coffee</h2>
+        <h3 class="subname">Cà phê culli rang xay</h3>
+        <div class="hc">
+          <h4 id="productPrice" class="price">45.000 đ</h4>
+          <button class="add">Thêm vào giỏ</button>
+        </div>
+      </div>
+      <div class="cardproduct">
+        <img src="/images/packaging/culli.jpg" alt="" class="imgproduct" />
+        <h2 id="productName" class="name">Culli roasted coffee</h2>
+        <h3 class="subname">Cà phê culli rang xay</h3>
+        <div class="hc">
+          <h4 id="productPrice" class="price">45.000 đ</h4>
+          <button class="add">Thêm vào giỏ</button>
+        </div>
+      </div>
+      <div class="cardproduct">
+        <img src="/images/packaging/culli.jpg" alt="" class="imgproduct" />
+        <h2 id="productName" class="name">Culli roasted coffee</h2>
+        <h3 class="subname">Cà phê culli rang xay</h3>
+        <div class="hc">
+          <h4 id="productPrice" class="price">45.000 đ</h4>
+          <button class="add">Thêm vào giỏ</button>
+        </div>
+      </div>
+    </div> -->
+  </div>
+  {{#if loadmore}}
+  <div><button value="1" id="btnLoadmore">Load more</button></div>
+  {{/if}}
+</div>
+<script src="/js/app/api/product.js"></script>
+<script src="/js/app/api/cart.js"></script>
+<script src="/js/app/home/index.js"></script>

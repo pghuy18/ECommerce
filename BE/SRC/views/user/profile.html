@@ -1,0 +1,82 @@
+<link rel="stylesheet" href="/css/style/stylelogin.css" />
+<div class="item2">
+  <div class="align">
+    <div class="login" id="profile">
+      <button>
+        <a href="/user/changepassword"><b style="color: red">Change Password</b></a>
+      </button>
+      <h1>Profile</h1>
+      <form id="profileFrm">
+        <div class="txtfield">
+          <input
+            type="text"
+            id="inputFullName"
+            name="fullName"
+            placeholder="Full Name"
+            required
+            autofocus
+          />
+          <label>Full Name</label>
+        </div>
+
+        <div class="txtfield">
+          <label for="">Male</label>
+          <input type="checkbox" id="inputGender" name="gender" placeholder="Gender" />
+        </div>
+
+        <div class="txtfield">
+          <input
+            type="date"
+            id="inputBirthDate"
+            name="birthDate"
+            value="2141/07/12"
+            placeholder="Address"
+            required
+          />
+          <label> Birth Date </label>
+        </div>
+
+        <div class="txtfield">
+          <input
+            type="text"
+            id="inputAddress"
+            name="address"
+            placeholder="Address"
+            required
+          />
+          <label> Address </label>
+        </div>
+
+        <div class="txtfield">
+          <input
+            type="tel"
+            id="inputphoneNumber"
+            name="phoneNumber"
+            placeholder="Phone Number"
+            required
+          />
+          <label> Phone Number </label>
+        </div>
+
+        <div class="txtfield">
+          <input
+            type="email"
+            id="inputEmail"
+            name="email"
+            placeholder="Phone Number"
+            disabled
+            style="background-color: darkgray"
+          />
+        </div>
+
+        <input type="Submit" value="Update Profile" />
+
+        <!-- <div class="signup_link">
+          NOT A MEMBER? <a href="/user/register"> Register Now </a>
+        </div> -->
+      </form>
+    </div>
+  </div>
+</div>
+
+<script src="/js/app/user/profile.js"></script>
